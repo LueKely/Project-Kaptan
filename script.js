@@ -10,16 +10,13 @@ const cock =
 
 async function lue() {
 	const data = await (await fetch(cock).catch(errorHandler)).json();
-	console.log(data);
+	console.log(data.hourly.temperature_2m[20]);
+	console.log(data.hourly.time[20]);
 }
 
 function errorHandler(err) {
 	console.warn(err);
-	let resp = new Response(
-		JSON.stringify({
-			hello: 'joe',
-		})
-	);
+	let resp = new Response(JSON.stringify('ERROR'));
 	return resp;
 }
 lue();
