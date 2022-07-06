@@ -12,7 +12,7 @@ let date = weekday[new Date().getDay()];
 let currentDay = [56, 59, 62, 65, 68];
 const promises = [];
 const url =
-	'https://api.open-meteo.com/v1/forecast?latitude=12.8785&longitude=121.7741&hourly=temperature_2m,relativehumidity_2m,weathercode&daily=weathercode,temperature_2m_max,temperature_2m_min&timezone=Asia%2FSingapore&past_days=2';
+	'https://api.open-meteo.com/v1/forecast?latitude=14.52&longitude=121.05&hourly=temperature_2m,relativehumidity_2m,weathercode&daily=weathercode,temperature_2m_max,temperature_2m_min&current_weather=true&timezone=Asia%2FSingapore';
 async function getForcast() {
 	const response = await fetch(url);
 	const data = await response.json();
@@ -24,6 +24,18 @@ async function getWW() {
 	const result = await ww.json();
 	return result;
 }
+let errorHandler = (error) => {
+	console.warn(error);
+	return {
+		time: 'error',
+		temp: 'error',
+		hum: 'error',
+		code: 'error',
+		result: () => {
+			return 'error';
+		},
+	};
+};
 async function todaysForcast(num) {
 	try {
 		const results = await getForcast();
@@ -38,32 +50,45 @@ async function todaysForcast(num) {
 			},
 		};
 	} catch (error) {
-		console.warn(error);
-		return {
-			time: '404 not found',
-			temp: '404 not found',
-			hum: '404 not found',
-			code: '404 not found',
-			result: () => {
-				return '404 not found';
-			},
-		};
+		errorHandler(error);
 	}
 }
+
 currentDay.forEach((day) => {
 	promises.push(todaysForcast(day));
 });
-Promise.all(promises).then((results) => {
-	results.forEach(async (element) => {
-		const lue = await element.result();
-		console.log(lue);
-		console.log(element);
-	});
-});
-// for weekly forcast
-function weeklyForcast() {
-	getForcast().then((result) => {
-		console.log(result.daily.temperature_2m_max[0]);
-		console.log(result.daily.time[2]);
+
+function listcurrentWeather() {
+	Promise.all(promises).then((results) => {
+		results.forEach(async (element) => {
+			const lue = await element.result();
+			console.log(lue);
+			console.log(element);
+		});
 	});
 }
+
+async function currentWeather() {
+	const response = await getForcast();
+
+	return {
+		temp: response.current_weather.temperature,
+		time: response.current_weather.time,
+		weathercode: response.current_weather.weathercode,
+		result: async () => {
+			const ww = await getWW();
+			return ww[response.current_weather.weathercode];
+		},
+	};
+}
+
+currentWeather().then((results) => {
+	console.log('The current weather is:');
+	console.log(results);
+	results.result().then((joe) => {
+		console.log(joe);
+	});
+});
+
+currentWeather();
+listcurrentWeather();
