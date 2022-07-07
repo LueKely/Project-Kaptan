@@ -20,7 +20,7 @@ async function getForcast() {
 	return data;
 }
 async function getWW() {
-	const ww = await fetch('./ww.json');
+	const ww = await fetch('./json/ww.json');
 	const result = await ww.json();
 	return result;
 }

@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'earwig factory rg';
+	src: url('../Fonts/earwig\ factory\ rg.ttf');
+}
+@font-face {
+	font-family: 'helvetica now display';
+	src: url('../Fonts/HelveticaNowDisplay-ExtBlk.ttf');
+}
+@font-face {
+	font-family: 'p5hatty';
+	src: url('../Fonts/p5hatty.ttf');
+}
+@font-face {
+	font-family: 'cooper black';
+	src: url('../Fonts/Cooper\ Black\ Regular.ttf');
+}
+@font-face {
+	font-family: 'ITC Avant Garde Gothic';
+	src: url('../Fonts/ITC\ Avant\ Garde\ Gothic\ Medium.otf');
+}
+@font-face {
+	font-family: 'texgyreadventor';
+	src: url('../Fonts/texgyreadventor-regular.otf');
+}
+@font-face {
+	font-family: 'clarendon';
+	src: url('../Fonts/Clarendon\ Regular.otf');
+}
+@font-face {
+	font-family: 'futura';
+	src: url('../Fonts/FuturaPTMedium.otf');
+}
+@font-face {
+	font-family: 'noto sans';
+	src: url('../Fonts/NotoSans-Black.ttf');
+}
+:root {
+	--red-color: #ff0505;
+	--bg-color: #d84141;
+	--black: #000000;
+	--white: #fffffe;
+}
+.test {
+	font-family: 'noto sans';
+	font-size: 4rem;
+}

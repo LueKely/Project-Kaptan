@@ -80,3 +80,5 @@ async function getWW() {
 	const result = await ww.json();
 	return result;
 }
+
+console.log(weekday);
