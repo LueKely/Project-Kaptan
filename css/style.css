@@ -4,7 +4,7 @@
 }
 @font-face {
 	font-family: 'helvetica now display';
-	src: url('../Fonts/HelveticaNowDisplay-ExtBlk.ttf');
+	src: url('../Fonts/HelveticaNowDisplay-BlackIta.ttf');
 }
 @font-face {
 	font-family: 'p5hatty';
@@ -39,8 +39,43 @@
 	--bg-color: #d84141;
 	--black: #000000;
 	--white: #fffffe;
+	--helvitica: 'helvetica now display';
 }
-.test {
-	font-family: 'noto sans';
+body {
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--bg-color);
+}
+
+.week--container {
+	background-color: bisque;
+	width: 300px;
+	height: 100px;
+	margin: auto;
+	font-family: var(--helvitica);
 	font-size: 4rem;
+	position: relative;
 }
+.week__day {
+	z-index: 3;
+
+	position: absolute;
+}
+.week--container > .week__day:first-child {
+	right: 80%;
+}
+.week--container > .week__day:nth-child(2) {
+	right: 68%;
+}
+.week--container > .week__day:nth-child(3) {
+	right: 53%;
+}
+
+/* ._day__background {
+	position: absolute;
+	background-color: var(--white);
+	width: 50px;
+	height: 75px;
+} */
