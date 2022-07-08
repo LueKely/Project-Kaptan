@@ -1,0 +1,68 @@
+.week {
+	width: 300px;
+	height: 120px;
+
+	margin: auto;
+	margin-top: 100px;
+	font-family: var(--helvitica);
+	font-size: 4rem;
+	position: relative;
+	z-index: -3;
+}
+.week > .week__tue {
+	z-index: 3;
+	position: absolute;
+}
+.week > .week__tue:first-child {
+	font-size: 4.3rem;
+	transform: rotate(-10deg) scale(0.95, 1.55);
+}
+/* t white */
+.week > .week__tue:nth-child(2) {
+	transform: rotate(-10deg);
+	z-index: 2;
+	background-color: var(--white);
+	height: 70px;
+	width: 25px;
+	right: 87.5%;
+	bottom: 25%;
+}
+.week > .week__tue:nth-child(3) {
+	transform: rotate(-100deg);
+	z-index: 2;
+
+	right: 88.5%;
+	bottom: 63.5%;
+
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 0px solid black;
+	border-top: 56px solid white;
+	width: 25px;
+	height: 0px;
+}
+
+/* T black */
+.week > .week__tue:nth-child(4) {
+	transform: rotate(-105deg);
+	z-index: 1;
+
+	right: 84.5%;
+	bottom: 53.5%;
+
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 0px solid black;
+	border-top: 76px solid black;
+	width: 35px;
+	height: 0px;
+}
+.week > .week__tue:nth-child(5) {
+	transform: rotate(-10deg);
+	z-index: 1;
+	background-color: var(--black);
+	height: 75px;
+	width: 40px;
+	right: 84.5%;
+	bottom: 15%;
+}

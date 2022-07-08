@@ -1,0 +1,224 @@
+.week--container {
+	width: 200px;
+	height: 120px;
+
+	margin: auto;
+	margin-top: 100px;
+	font-family: var(--helvitica);
+	font-size: 4rem;
+	position: relative;
+	z-index: -3;
+}
+.week__mon {
+	z-index: 3;
+
+	position: absolute;
+}
+.week--container > .week__mon:first-child {
+	transform: rotate(-3deg) scale(0.8, 1.25);
+	right: 66%;
+	top: 10%;
+}
+.week--container > .week__mon:nth-child(2) {
+	transform: scaleY(140%);
+	font-size: 2.75rem;
+	right: 51%;
+	top: 25%;
+}
+.week--container > .week__mon:nth-child(3) {
+	transform: rotate(-3deg) scale(0.8, 1.25);
+	right: 33%;
+	top: 8%;
+}
+/* white */
+.week--container > .week__mon:nth-child(4) {
+	transform: rotate(-3deg);
+
+	position: absolute;
+
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 0px solid black;
+	border-top: 70px solid white;
+	width: 50px;
+	height: 0px;
+
+	right: 66%;
+	top: 13%;
+	z-index: 2;
+}
+.week--container > .week__mon:nth-child(5) {
+	transform: scaleY(120%) rotate(-30deg);
+	position: absolute;
+	background-color: var(--white);
+	width: 45px;
+	height: 45px;
+	right: 48%;
+	top: 29%;
+	z-index: 2;
+	border-radius: 50%;
+}
+.week--container > .week__mon:nth-child(6) {
+	transform: rotate(-2deg);
+	position: absolute;
+
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	border-top: 70px solid var(--white);
+
+	width: 38px;
+	right: 33%;
+	top: 13%;
+	z-index: 2;
+}
+/* black */
+.week--container > .week__mon:nth-child(7) {
+	transform: rotate(-3deg);
+
+	position: absolute;
+
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 0px solid black;
+	border-top: 90px solid var(--black);
+
+	width: 60px;
+	right: 62%;
+	top: 5%;
+	z-index: 1;
+}
+.week--container > .week__mon:nth-child(8) {
+	transform: scaleY(120%) rotate(-30deg);
+	position: absolute;
+	background-color: var(--black);
+	width: 55px;
+	height: 55px;
+	right: 46%;
+	top: 25%;
+	z-index: 1;
+	border-radius: 50%;
+}
+.week--container > .week__mon:nth-child(9) {
+	transform: rotate(-2deg);
+	position: absolute;
+
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+
+	border-top: 90px solid var(--black);
+
+	width: 55px;
+	right: 29%;
+	top: 6%;
+	z-index: 1;
+}
+
+/* day */
+/* D */
+.week--container > .week__mon:nth-child(10) {
+	transform: rotate(3deg) scale(0.8, 1.4);
+	right: 14%;
+	top: 6%;
+}
+
+.week--container > .week__mon:nth-child(11) {
+	transform: rotate(-3deg);
+
+	right: -2%;
+	top: 6%;
+}
+.week--container > .week__mon:nth-child(12) {
+	transform: rotate(-3deg) scale(0.8, 1.4);
+	right: -17.5%;
+	top: 6%;
+}
+
+/* white for day */
+.week--container > .week__mon:nth-child(13) {
+	transform: rotate(3deg);
+	background-color: var(--white);
+	width: 50px;
+	height: 75px;
+	z-index: 2;
+	border-radius: 0px 50% 50% 0px;
+
+	right: 13%;
+	top: 8%;
+}
+.week--container > .week__mon:nth-child(14) {
+	transform: rotate(-3deg);
+	right: 55%;
+	color: var(--white);
+	z-index: 2;
+	font-size: 5.5rem;
+	right: -4.5%;
+	top: -10%;
+}
+
+/* fill to ng A okay? */
+.week--container > .week__mon:nth-child(15) {
+	z-index: 2;
+
+	background-color: var(--white);
+	width: 30px;
+	height: 30px;
+	right: -2%;
+	top: 30%;
+}
+/* Y */
+.week--container > .week__mon:nth-child(16) {
+	font-weight: 800;
+	transform: rotate(-3deg) scale(0.9, 1.4);
+	color: var(--white);
+
+	z-index: 2;
+	font-size: 5rem;
+	right: -20.55%;
+	top: -5%;
+}
+/* y fill */
+.week--container > .week__mon:nth-child(17) {
+	transform: rotate(-3deg);
+	right: -11.55%;
+	top: 12%;
+	background-color: var(--white);
+	width: 20px;
+	height: 25px;
+	z-index: 2;
+}
+
+/* black for day */
+.week--container > .week__mon:nth-child(18) {
+	transform: rotate(3deg);
+	background-color: var(--black);
+	width: 60px;
+	height: 95px;
+	z-index: 0;
+	border-radius: 0px 30% 30% 0px;
+
+	right: 12%;
+	top: -2%;
+}
+.week--container > .week__mon:nth-child(19) {
+	transform: rotate(-3deg);
+
+	color: var(--black);
+	z-index: 1;
+	font-size: 7.4rem;
+	right: -7.5%;
+	top: -28%;
+}
+.week--container > .week__mon:nth-child(20) {
+	transform: rotate(-3deg);
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
+	border-bottom: 0px solid black;
+	border-top: 100px solid var(--black);
+
+	width: 45px;
+
+	z-index: 1;
+	right: -23.5%;
+	top: -5%;
+}
