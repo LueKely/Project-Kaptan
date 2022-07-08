@@ -262,14 +262,14 @@ body {
 }
 .week--container > .week__mon:nth-child(20) {
 	transform: rotate(-3deg);
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
+	border-left: 13px solid transparent;
+	border-right: 13px solid transparent;
 	border-bottom: 0px solid black;
 	border-top: 100px solid var(--black);
 
 	width: 45px;
 
 	z-index: 1;
-	right: -25.5%;
+	right: -23.5%;
 	top: -5%;
 }
