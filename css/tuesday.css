@@ -275,13 +275,13 @@
 	bottom: 25%;
 }
 .week > .week__tue:nth-child(25) {
-	z-index: 2;
-	border-left: 15px solid transparent;
-	border-right: 15px solid transparent;
-	border-top: 115px solid var(--black);
+	z-index: 1;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-top: 140px solid var(--black);
 
-	width: 40px;
+	width: 50px;
 	height: 0px;
-	right: -3%;
-	bottom: 25%;
+	right: -8%;
+	bottom: 15%;
 }
