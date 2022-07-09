@@ -1,0 +1,65 @@
+.week > .week__wed {
+	z-index: 3;
+	position: absolute;
+}
+
+/* W */
+.week > .week__wed:nth-child(1) {
+	transform: rotate(-7deg) scale(1, 1.55) skewX(-12deg);
+}
+/* W white */
+.week > .week__wed:nth-child(2) {
+	transform: rotate(-10deg) skewX(-10deg);
+
+	z-index: 2;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 86px solid var(--white);
+
+	width: 50px;
+	height: 0px;
+
+	bottom: 30%;
+	right: 75.8%;
+}
+/* W black */
+.week > .week__wed:nth-child(3) {
+	transform: rotate(-10deg) skewX(-10deg);
+
+	z-index: 1;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-top: 110px solid var(--black);
+
+	width: 70px;
+	height: 0px;
+
+	bottom: 22%;
+	right: 72%;
+}
+
+/* e */
+.week > .week__wed:nth-child(4) {
+	transform: rotate(-10deg) scale(1, 1.9);
+	right: 69%;
+}
+/* e white */
+.week > .week__wed:nth-child(5) {
+	transform: rotate(-10deg);
+	z-index: 2;
+	width: 60px;
+	height: 80px;
+	background-color: var(--white);
+	right: 65%;
+	bottom: 25%;
+	border-radius: 50%;
+}
+.week > .week__wed:nth-child(6) {
+	transform: rotate(-10deg);
+	z-index: 1;
+	width: 65px;
+	height: 100px;
+	background-color: var(--black);
+	right: 63%;
+	bottom: 20%;
+}
