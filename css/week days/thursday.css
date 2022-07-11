@@ -1,0 +1,103 @@
+.week > .week__thu {
+	z-index: 3;
+	position: absolute;
+}
+
+/* T */
+
+.week > .week__thu:nth-child(1) {
+	transform: rotate(-7deg) scale(1, 1.9);
+}
+
+/* T white part 1 */
+.week > .week__thu:nth-child(2) {
+	z-index: 2;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+
+	border-top: 40px solid var(--white);
+	transform: rotate(-7deg);
+
+	width: 60px;
+	height: 0px;
+
+	bottom: 75%;
+	right: 83.5%;
+}
+/* T white part 2 */
+.week > .week__thu:nth-child(3) {
+	z-index: 2;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+
+	border-top: 60px solid var(--white);
+	transform: rotate(-7deg);
+
+	width: 30px;
+	height: 0px;
+
+	bottom: 25.5%;
+	right: 86%;
+}
+/* T black part 1 */
+.week > .week__thu:nth-child(4) {
+	z-index: 1;
+	border-left: 3px solid transparent;
+	border-right: 7px solid transparent;
+
+	border-top: 60px solid var(--black);
+	transform: rotate(-7deg);
+
+	width: 85px;
+	height: 0px;
+
+	bottom: 65%;
+	right: 78.5%;
+}
+/* T black part 2 */
+.week > .week__thu:nth-child(5) {
+	z-index: 1;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+
+	border-top: 70px solid var(--black);
+	transform: rotate(-7deg);
+
+	width: 45px;
+	height: 0px;
+
+	bottom: 20.5%;
+	right: 83%;
+}
+
+/* H */
+
+.week > .week__thu:nth-child(6) {
+	transform: rotate(-7deg) scale(1, 1.8);
+
+	bottom: 29.5%;
+	right: 72%;
+}
+/* H white */
+.week > .week__thu:nth-child(7) {
+	transform: rotate(-7deg);
+	z-index: 2;
+	background-color: white;
+	width: 55px;
+	height: 95px;
+
+	bottom: 20.5%;
+	right: 71%;
+}
+
+/* H Black */
+.week > .week__thu:nth-child(8) {
+	transform: rotate(-7deg);
+	z-index: 1;
+	background-color: black;
+	width: 55px;
+	height: 95px;
+
+	bottom: 20.5%;
+	right: 71%;
+}
