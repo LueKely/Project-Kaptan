@@ -104,13 +104,13 @@
 /* u  */
 .week > .week__thu:nth-child(9) {
 	transform: rotate(-12deg) scale(1, 1.9);
-	bottom: 33.5%;
+	bottom: 39.5%;
 	right: 58.5%;
 }
 /* u white part 1 */
 .week > .week__thu:nth-child(10) {
 	transform: rotate(-12deg) scale(1, 1.9);
-	bottom: 35.5%;
+	bottom: 39.5%;
 	right: 59%;
 	color: white;
 	font-size: 4.5rem;
@@ -122,21 +122,31 @@
 .week > .week__thu:nth-child(11) {
 	transform: rotate(-12deg);
 	z-index: 2;
-	bottom: 26.2%;
-	right: 60.5%;
+	bottom: 29.2%;
+	right: 61.5%;
 	background-color: white;
 	width: 16px;
 	height: 80px;
 }
 
-/* u black */
+/* u black  pt1*/
 
 .week > .week__thu:nth-child(12) {
-	transform: rotate(-13deg);
+	transform: rotate(-12deg);
 	z-index: 1;
-	bottom: 20%;
-	right: 50.5%;
+	bottom: 30%;
+	right: 53.5%;
 	background-color: black;
-	width: 90px;
-	height: 120px;
+	width: 99px;
+	height: 100px;
+}
+/* u black  pt1*/
+.week > .week__thu:nth-child(13) {
+	transform: rotate(-12deg);
+	z-index: 1;
+	bottom: 30%;
+	right: 53.5%;
+	background-color: black;
+	width: 99px;
+	height: 100px;
 }
