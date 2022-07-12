@@ -60,13 +60,13 @@
 	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
 
-	border-top: 70px solid var(--black);
+	border-top: 75px solid var(--black);
 	transform: rotate(-7deg);
 
-	width: 45px;
+	width: 50px;
 	height: 0px;
 
-	bottom: 20.5%;
+	bottom: 19.5%;
 	right: 83%;
 }
 
@@ -95,7 +95,7 @@
 	transform: rotate(-5deg);
 	z-index: 1;
 	background-color: black;
-	width: 65px;
+	width: 70px;
 	height: 115px;
 
 	bottom: 12.5%;
@@ -142,11 +142,11 @@
 }
 /* u black  pt1*/
 .week > .week__thu:nth-child(13) {
-	transform: rotate(-12deg);
+	transform: rotate(-19deg);
 	z-index: 1;
-	bottom: 30%;
-	right: 53.5%;
+	bottom: 21%;
+	right: 53.18%;
 	background-color: black;
-	width: 99px;
-	height: 100px;
+	width: 56px;
+	height: 70px;
 }
