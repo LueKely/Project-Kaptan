@@ -172,11 +172,11 @@
 /* R black */
 .week > .week__thu:nth-child(16) {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	transform: rotate(2deg) scale(1.6, 1.9);
+	transform: rotate(2deg) scale(1.7, 1.9);
 	z-index: 1;
 	font-size: 4.6rem;
-	bottom: 29%;
-	right: 41.18%;
+	bottom: 28%;
+	right: 40.18%;
 	-webkit-text-stroke-width: 22px;
 	-webkit-text-stroke-color: var(--black);
 }
@@ -220,11 +220,11 @@
 .week > .week__thu:nth-child(21) {
 	transform: rotate(2deg);
 
-	bottom: 36.5%;
+	bottom: 33.5%;
 	right: 22.18%;
 
 	width: 34px;
-	height: 68px;
+	height: 75px;
 	border-radius: 20%;
 	background-color: black;
 }
