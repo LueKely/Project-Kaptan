@@ -27,7 +27,7 @@
 	transform: rotate(-10deg) skewX(-10deg);
 
 	z-index: 1;
-	border-left: 15px solid transparent;
+	border-left: 20px solid transparent;
 	border-right: 15px solid transparent;
 	border-top: 110px solid var(--black);
 
