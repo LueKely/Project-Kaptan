@@ -114,7 +114,7 @@
 }
 /* Y white */
 .week > .week__fri:nth-child(14) {
-	transform: scale(1, 1.9) rotate(-3deg);
+	transform: scale(1, 1.8) rotate(-3deg);
 	color: white;
 	z-index: 2;
 	-webkit-text-stroke: 23px;
