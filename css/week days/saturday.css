@@ -61,7 +61,6 @@
 /* A black fill */
 .week > .week__sat:nth-child(7) {
 	transform: rotate(-6deg);
-	z-index: 2;
 
 	width: 20px;
 	height: 43px;
