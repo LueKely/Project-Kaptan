@@ -231,7 +231,7 @@
 
 	border-radius: 0 0 30% 0;
 
-	bottom: 23%;
+	bottom: 22.5%;
 	right: 17%;
 }
 /* a black */
@@ -242,7 +242,7 @@
 	z-index: 1;
 	background-color: black;
 
-	bottom: 19%;
+	bottom: 18.85%;
 	right: -2%;
 }
 /* Y black */
@@ -254,7 +254,7 @@
 	z-index: 1;
 
 	bottom: 54.74%;
-	right: -7%;
+	right: -6%;
 	-webkit-text-stroke-width: 31px;
 	-webkit-text-stroke-color: var(--black);
 }
