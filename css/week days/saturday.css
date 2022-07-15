@@ -158,20 +158,20 @@
 .week > .week__sat:nth-child(18) {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-	transform: scale(1.5, 2);
+	transform: scale(1.5, 1.9);
 	font-size: 5rem;
 
-	bottom: 29%;
-	right: -10%;
+	bottom: 48.5%;
+	right: -13%;
 }
 .week > .week__sat:nth-child(19) {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-	transform: scale(1.5, 2);
+	transform: scale(1.7, 2);
 	z-index: 2;
 
-	bottom: 36.5%;
-	right: -2%;
+	bottom: 57%;
+	right: -12%;
 	-webkit-text-stroke-width: 15px;
 	-webkit-text-stroke-color: var(--white);
 }
