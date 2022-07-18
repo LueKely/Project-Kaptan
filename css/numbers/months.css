@@ -1,12 +1,44 @@
-.month__number {
-	width: 400px;
-	height: 200px;
-	margin: auto;
-	background-color: bisque;
+.month--container {
+	font-size: 8rem;
+	width: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
-.month__number {
+
+.month__item {
+	width: 150px;
+	height: 150px;
+
+	position: relative;
+	margin-block: 10px;
+}
+.month__item > p {
+	position: absolute;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	transform: scale(1, 2.2);
-	font-size: 5rem;
+	/* font-family: var(--helvitica); */
+
 	font-weight: 900;
+	letter-spacing: 0.5rem;
+}
+.month__item > p:first-child {
+	right: 25%;
+	color: white;
+	z-index: 3;
+	bottom: 25%;
+}
+.month__item > p:nth-child(2) {
+	right: 25%;
+	color: black;
+	z-index: 2;
+	bottom: 25%;
+	-webkit-text-stroke: 20px;
+}
+
+.month__item > p:nth-child(3) {
+	right: 25%;
+	color: white;
+	z-index: 1;
+	-webkit-text-stroke: 30px;
+	bottom: 25%;
 }

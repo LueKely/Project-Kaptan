@@ -1,0 +1,43 @@
+.weekday--container {
+	width: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.weekday__item {
+	width: 275px;
+	height: 275px;
+
+	position: relative;
+	margin-block: 10px;
+}
+.weekday__item > p {
+	transform: scale(1.2, 1.9);
+	position: absolute;
+	font-family: var(--helvitica);
+	font-size: 7rem;
+	font-weight: 900;
+	letter-spacing: 0.75rem;
+}
+.weekday__item > p:first-child {
+	right: 20%;
+	color: white;
+	z-index: 3;
+	bottom: 25%;
+}
+.weekday__item > p:nth-child(2) {
+	right: 20%;
+	color: black;
+	z-index: 2;
+	bottom: 25%;
+	-webkit-text-stroke: 17px;
+}
+
+.weekday__item > p:nth-child(3) {
+	right: 20%;
+	color: white;
+	z-index: 1;
+	-webkit-text-stroke: 25px;
+	bottom: 25%;
+}
