@@ -250,7 +250,7 @@
 .week > .week__sat:nth-child(26) {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
-	transform: scale(1.7, 2.1);
+	transform: scale(2, 2.1);
 	z-index: 1;
 
 	bottom: 54.74%;

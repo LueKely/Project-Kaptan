@@ -1,0 +1,12 @@
+.month__number {
+	width: 400px;
+	height: 200px;
+	margin: auto;
+	background-color: bisque;
+}
+.month__number {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	transform: scale(1, 2.2);
+	font-size: 5rem;
+	font-weight: 900;
+}
