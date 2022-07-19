@@ -3,6 +3,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-image: url('/Images/current-temp-bg.png');
+	background-repeat: no-repeat;
+	background-position: 54% 45%;
 }
 
 .temptoday__item {
@@ -16,7 +19,7 @@
 	font-weight: bolder;
 	transform: scale(1.3, 1.9);
 	position: absolute;
-	font-family: 'noto sans';
+	font-family: 'cooper black';
 	font-size: 5.4rem;
 }
 .temptoday__item > p:first-child {
