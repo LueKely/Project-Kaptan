@@ -42,3 +42,89 @@
 	-webkit-text-stroke: 30px;
 	bottom: 25%;
 }
+
+.month__item > .month__black {
+	position: absolute;
+	width: 100px;
+	height: 80px;
+	right: 50%;
+	bottom: 37%;
+	z-index: 2;
+	background-color: black;
+}
+.month__item > .month__white {
+	position: absolute;
+	width: 100px;
+	height: 90px;
+	right: 50%;
+	bottom: 33.5%;
+	z-index: 1;
+	background-color: white;
+}
+
+.month__item > p:nth-child(6) {
+	font-size: 6rem;
+	transform: rotate(10deg);
+	color: white;
+	z-index: 3;
+	right: 13%;
+	bottom: 12%;
+}
+.month__item > .month__blackslash {
+	position: absolute;
+	transform: rotate(30deg);
+	width: 40px;
+	height: 90px;
+	background-color: black;
+	z-index: 2;
+	right: 29%;
+	bottom: -5%;
+}
+.month__blackslash-two {
+	position: absolute;
+	transform: rotate(25deg);
+	width: 30px;
+	height: 130px;
+	background-color: black;
+	z-index: 2;
+	right: 1%;
+	bottom: -3%;
+}
+.month__blackslash-three {
+	position: absolute;
+	width: 68px;
+	height: 73px;
+	background-color: black;
+	z-index: 2;
+	right: 2%;
+	bottom: 37%;
+}
+.month__item > .month__blackslash-white {
+	position: absolute;
+	transform: rotate(30deg);
+	width: 55px;
+	height: 100px;
+	background-color: white;
+	z-index: 1;
+	right: 24%;
+	bottom: -10%;
+}
+.month__blackslash-two-white {
+	position: absolute;
+	transform: rotate(25deg);
+	width: 35px;
+	height: 150px;
+	background-color: white;
+	z-index: 1;
+	right: -5%;
+	bottom: -13%;
+}
+.month__blackslash-three-white {
+	position: absolute;
+	width: 68px;
+	height: 73px;
+	background-color: white;
+	z-index: 1;
+	right: -5%;
+	bottom: 40.5%;
+}

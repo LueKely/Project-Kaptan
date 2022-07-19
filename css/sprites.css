@@ -1,0 +1,61 @@
+.character {
+	width: 120px;
+	height: 120px;
+	background-color: white;
+	overflow: hidden;
+	margin: auto auto;
+}
+.character__sprite {
+	width: 460px;
+}
+.character__sprite.hail {
+	width: 460px;
+	animation: moveSpritesheet_hail 1s steps(3) infinite;
+}
+
+.character__sprite.sunny {
+	width: 460px;
+	animation: moveSpritesheet_sunny 1s steps(3) infinite;
+}
+.character__sprite.cloudy {
+	width: 460px;
+	animation: moveSpritesheet_cloudy 1s steps(3) infinite;
+}
+.character__sprite.rainy {
+	width: 460px;
+	animation: moveSpritesheet_rainy 1s steps(3) infinite;
+}
+
+@keyframes moveSpritesheet_sunny {
+	from {
+		transform: translate3d(0px, 0px, 0px);
+	}
+	to {
+		transform: translate3d(0px, -100%, 0);
+	}
+}
+@keyframes moveSpritesheet_rainy {
+	from {
+		transform: translate3d(-225px, 0px, 0px);
+	}
+	to {
+		transform: translate3d(-225px, -100%, 0);
+	}
+}
+@keyframes moveSpritesheet_cloudy {
+	from {
+		transform: translate3d(-110px, 0px, 0px);
+	}
+	to {
+		transform: translate3d(-110px, -100%, 0);
+	}
+}
+
+@keyframes moveSpritesheet_hail {
+	from {
+		transform: translate3d(-340px, 0px, 0px);
+	}
+	to {
+		transform: translate3d(-340px, -100%, 0);
+	}
+}

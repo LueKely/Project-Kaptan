@@ -41,3 +41,23 @@
 	-webkit-text-stroke: 25px;
 	bottom: 25%;
 }
+
+/* black fill */
+.weekday__item > .weekday__black {
+	position: absolute;
+	width: 100px;
+	height: 170px;
+	right: 30%;
+	bottom: 17%;
+	z-index: 2;
+	background-color: black;
+}
+.weekday__item > .weekday__white {
+	position: absolute;
+	width: 100px;
+	height: 190px;
+	right: 30%;
+	bottom: 13%;
+	z-index: 1;
+	background-color: white;
+}
