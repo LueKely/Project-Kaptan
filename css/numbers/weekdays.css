@@ -61,3 +61,10 @@
 	z-index: 1;
 	background-color: white;
 }
+.weekday__item > p:nth-child(9) {
+	right: 20%;
+	color: white;
+	z-index: 1;
+	-webkit-text-stroke: 25px;
+	bottom: 25%;
+}
