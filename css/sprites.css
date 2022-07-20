@@ -1,14 +1,12 @@
 .character {
-	transform: rotate(15deg);
 	width: 120px;
 	height: 120px;
 	background-color: white;
 	overflow: hidden;
-	margin: auto auto;
+	transform: rotate(-10deg);
 }
-.character__sprite {
-	transform: rotate(-15deg);
 
+.character__sprite {
 	width: 460px;
 }
 .character__sprite.hail {

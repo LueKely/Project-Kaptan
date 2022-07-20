@@ -1,14 +1,3 @@
-const weekday = [
-	'Sunday',
-	'Monday',
-	'Tuesday',
-	'Wednesday',
-	'Thursday',
-	'Friday',
-	'Saturday',
-];
-let date = weekday[new Date().getDay()];
-
 let currentDay = [56, 59, 62, 65, 68];
 const promises = [];
 const url =
@@ -89,6 +78,47 @@ currentWeather().then((results) => {
 		console.log(joe);
 	});
 });
+// listcurrentWeather();
 
-currentWeather();
-listcurrentWeather();
+const weekdayNum = document.querySelector('.weekday__item');
+const curTemp = document.querySelector('.temptoday__item');
+const curMon = document.querySelector('.month__item');
+const todayDate = document.querySelector('.today__word');
+let date = new Date();
+
+function getCurrTemp() {
+	currentWeather().then((response) => {
+		curTemp.children[0].textContent = response.temp + '\u00B0';
+		curTemp.children[1].textContent = response.temp + '\u00B0';
+	});
+}
+
+function getCurrentMonth() {
+	if (date.getMonth() + 1 > 10) {
+		curMon.children[0].textContent = date.getMonth() + 1;
+		curMon.children[1].textContent = date.getMonth() + 1;
+		curMon.children[2].textContent = date.getMonth() + 1;
+	} else {
+		curMon.children[0].textContent = `0${date.getMonth() + 1}`;
+		curMon.children[1].textContent = `0${date.getMonth() + 1}`;
+		curMon.children[2].textContent = `0${date.getMonth() + 1}`;
+	}
+}
+function getCurrentDayNum() {
+	weekdayNum.children[2].textContent = date.getDate();
+	weekdayNum.children[1].textContent = date.getDate();
+	weekdayNum.children[0].textContent = date.getDate();
+}
+
+function getCurrentDate() {
+	getCurrentMonth();
+	getCurrentDayNum();
+}
+getCurrTemp();
+getCurrentDate();
+
+const lue = fetch('./json/weathertemp.json').then((response) => {
+	response.json().then((result) => {
+		todayDate.innerHTML = result[date.getDay()];
+	});
+});
