@@ -48,6 +48,8 @@ body {
 	height: 100vh;
 	background-color: black;
 	background-image: url('../Images/bgi.png');
+	background-image: url('https://raw.githubusercontent.com/LueKely/Project-Kaptan/main/Images/bgi.png');
+
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
