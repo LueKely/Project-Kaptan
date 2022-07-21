@@ -26,25 +26,25 @@
 	transform: scale(0.8);
 
 	z-index: 4;
-	bottom: 20%;
+	bottom: 17%;
 	right: 25%;
 }
 .today__temp {
-	transform: scale(0.9);
-	z-index: 2;
+	transform: rotate(-15deg);
+	z-index: 0;
+	/* 
+	right: -17%;
+	bottom: 22%; */
 
-	right: -30%;
-	bottom: 0%;
+	right: -16%;
+	bottom: 10%;
 }
 .today__weather {
 	bottom: 50%;
 	right: 18%;
 }
 .today__mmtemp {
-	bottom: 10%;
+	z-index: 5;
+	bottom: 12%;
 	right: 30%;
-}
-
-.today:hover {
-	transform: scale(1.2);
 }
