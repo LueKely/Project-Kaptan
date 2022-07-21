@@ -3,7 +3,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url('/Images/current-temp-bg.png');
+	/* background-image: url('/Images/current-temp-bg.png'); */
 	background-image: url('https://raw.githubusercontent.com/LueKely/Project-Kaptan/main/Images/current-temp-bg.png');
 	background-repeat: no-repeat;
 	background-position: 100% 70%;
