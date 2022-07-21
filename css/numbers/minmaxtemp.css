@@ -1,0 +1,25 @@
+.mmtemp--container {
+	transform: skew(-16deg, 0deg);
+	font-family: 'cooper black';
+	padding: 10px;
+	width: 200px;
+	font-size: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: black;
+}
+.mmtemp--container > p {
+	transform: skew(16deg, 0deg);
+	text-align: center;
+}
+.mmtemp__max {
+	color: red;
+}
+.mmtemp__dash {
+	color: white;
+}
+.mmtemp__min {
+	color: blue;
+	margin-left: 10px;
+}

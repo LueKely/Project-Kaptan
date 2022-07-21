@@ -1,0 +1,50 @@
+.today {
+	position: relative;
+	margin: auto;
+	width: 600px;
+	height: 500px;
+
+	z-index: 0;
+}
+
+.today > div {
+	position: absolute;
+}
+.today__month {
+	transform: scale(0.7);
+	bottom: 40%;
+	right: 43%;
+}
+.today__num {
+	z-index: 3;
+	transform: rotate(-5deg);
+	bottom: 30%;
+	right: 10%;
+}
+
+.today__word {
+	transform: scale(0.8);
+
+	z-index: 4;
+	bottom: 17%;
+	right: 25%;
+}
+.today__temp {
+	transform: rotate(-15deg);
+	z-index: 0;
+	/* 
+	right: -17%;
+	bottom: 22%; */
+
+	right: -16%;
+	bottom: 10%;
+}
+.today__weather {
+	bottom: 50%;
+	right: 18%;
+}
+.today__mmtemp {
+	z-index: 5;
+	bottom: 12%;
+	right: 30%;
+}

@@ -1,14 +1,3 @@
-const weekday = [
-	'Sunday',
-	'Monday',
-	'Tuesday',
-	'Wednesday',
-	'Thursday',
-	'Friday',
-	'Saturday',
-];
-let date = weekday[new Date().getDay()];
-
 let currentDay = [56, 59, 62, 65, 68];
 const promises = [];
 const url =
@@ -54,6 +43,7 @@ async function todaysForcast(num) {
 	}
 }
 
+//pushes all the data in currentday to an array of promises
 currentDay.forEach((day) => {
 	promises.push(todaysForcast(day));
 });
@@ -68,6 +58,7 @@ function listcurrentWeather() {
 	});
 }
 
+//gets the current weather in api
 async function currentWeather() {
 	const response = await getForcast();
 
@@ -81,7 +72,7 @@ async function currentWeather() {
 		},
 	};
 }
-
+//demonstration
 currentWeather().then((results) => {
 	console.log('The current weather is:');
 	console.log(results);
@@ -89,6 +80,88 @@ currentWeather().then((results) => {
 		console.log(joe);
 	});
 });
+// listcurrentWeather();
 
-currentWeather();
-listcurrentWeather();
+const weekdayNum = document.querySelector('.weekday__item');
+const curTemp = document.querySelector('.temptoday__item');
+const curMon = document.querySelector('.month__item');
+const todayDate = document.querySelector('.today__word');
+const weatherForecast = document.querySelector('.character__sprite');
+const maxTemp = document.querySelector('.mmtemp__max');
+const minTemp = document.querySelector('.mmtemp__min');
+// gets the html day from the json
+const lue = fetch('./json/weathertemp.json').then((response) => {
+	response.json().then((result) => {
+		todayDate.innerHTML = result[date.getDay()];
+	});
+});
+let date = new Date();
+
+//gets the curr temp
+function getCurrTemp() {
+	currentWeather().then((response) => {
+		curTemp.children[0].textContent = response.temp + '\u00B0';
+		curTemp.children[1].textContent = response.temp + '\u00B0';
+	});
+}
+
+//gets the forecast
+function getCurrForecast() {
+	currentWeather().then((response) => {
+		showForecast(response.weathercode);
+	});
+}
+//tells what class to add to the img
+function showForecast(input) {
+	if (input == 3 || input == 0) {
+		weatherForecast.classList.add('sunny');
+	} else if (input >= 1 && input < 45 && input != 3) {
+		weatherForecast.classList.add('cloudy');
+	} else if (input >= 51 && input <= 65) {
+		weatherForecast.classList.add('rainy');
+	} else if (input >= 66 && input <= 77) {
+		weatherForecast.classList.add('snowy');
+	} else if (input >= 80 && input <= 86) {
+		weatherForecast.classList.add('rainy');
+	} else if (input >= 95 && input < 99) {
+		weatherForecast.classList.add('cloudy');
+	} else {
+		console.warn('forcast: somethign went wrong');
+	}
+}
+// this gets the month
+function getCurrentMonth() {
+	if (date.getMonth() + 1 > 10) {
+		curMon.children[0].textContent = date.getMonth() + 1;
+		curMon.children[1].textContent = date.getMonth() + 1;
+		curMon.children[2].textContent = date.getMonth() + 1;
+	} else {
+		curMon.children[0].textContent = `0${date.getMonth() + 1}`;
+		curMon.children[1].textContent = `0${date.getMonth() + 1}`;
+		curMon.children[2].textContent = `0${date.getMonth() + 1}`;
+	}
+}
+// gets the days
+function getCurrentDayNum() {
+	weekdayNum.children[0].textContent = date.getDate();
+	weekdayNum.children[1].textContent = date.getDate();
+	weekdayNum.children[2].textContent = date.getDate();
+}
+
+// gets the min and max temp
+function getMinMaxTemp() {
+	getForcast().then((response) => {
+		maxTemp.textContent = response.daily.temperature_2m_max[0] + 'º';
+		minTemp.textContent = response.daily.temperature_2m_min[0] + 'º';
+	});
+}
+// initializes time
+function getCurrentDate() {
+	getCurrentMonth();
+	getCurrentDayNum();
+}
+getCurrTemp();
+getCurrentDate();
+getCurrForecast();
+
+getMinMaxTemp();
