@@ -47,7 +47,7 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: black;
-	background-image: url('/Images/bgi.png');
+	background-image: url('../Images/bgi.png');
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
