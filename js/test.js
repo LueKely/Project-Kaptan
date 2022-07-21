@@ -163,5 +163,4 @@ function getCurrentDate() {
 getCurrTemp();
 getCurrentDate();
 getCurrForecast();
-
 getMinMaxTemp();
