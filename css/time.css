@@ -1,0 +1,12 @@
+.time--container {
+	font-family: 'earwig factory rg';
+	color: var(--red-color);
+	font-size: 5rem;
+}
+
+.time--container > div {
+	width: 350px;
+	margin: 10px;
+	background-color: black;
+	padding: 20px;
+}
