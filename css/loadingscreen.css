@@ -1,0 +1,11 @@
+.load--container {
+	width: 100vw;
+	height: 100vh;
+	background-color: #434443;
+}
+
+/* text */
+.load__text__container {
+	font-family: 'p5hatty';
+	font-size: 3rem;
+}
