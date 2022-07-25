@@ -1,5 +1,3 @@
-let currentDay = [56, 59, 62, 65, 68];
-const promises = [];
 const url =
 	'https://api.open-meteo.com/v1/forecast?latitude=14.52&longitude=121.05&hourly=temperature_2m,relativehumidity_2m,weathercode&daily=weathercode,temperature_2m_max,temperature_2m_min&current_weather=true&timezone=Asia%2FSingapore';
 async function getForcast() {
@@ -41,21 +39,6 @@ async function todaysForcast(num) {
 	} catch (error) {
 		errorHandler(error);
 	}
-}
-
-//pushes all the data in currentday to an array of promises
-currentDay.forEach((day) => {
-	promises.push(todaysForcast(day));
-});
-
-function listcurrentWeather() {
-	Promise.all(promises).then((results) => {
-		results.forEach(async (element) => {
-			const lue = await element.result();
-			console.log(lue);
-			console.log(element);
-		});
-	});
 }
 
 //gets the current weather in api
@@ -170,10 +153,6 @@ function getCurrentDate() {
 	getCurrentMonth();
 	getCurrentDayNum(0);
 }
-getCurrTemp(0);
-getCurrentDate();
-getCurrForecast(0);
-getMinMaxTemp(0);
 
 // gets all the next 3 days
 const allDays = fetch('./json/weathertemp.json').then((response) => {
@@ -188,7 +167,10 @@ const allDays = fetch('./json/weathertemp.json').then((response) => {
 		}
 	});
 });
-
+getCurrTemp(0);
+getCurrentDate();
+getCurrForecast(0);
+getMinMaxTemp(0);
 // if it output gets pass 8 then it subtracts it
 function output(index) {
 	let input = date.getDay() + index;
