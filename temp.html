@@ -20,6 +20,7 @@
 		<link rel="stylesheet" href="./css/template.css" />
 		<link rel="stylesheet" href="./css/time.css" />
 		<link rel="icon" href="./Images/sprites/logo.png" />
+		<link rel="stylesheet" href="./css/week-box.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -36,179 +37,190 @@
 			</div>
 		</div>
 
-		<!-- today -->
-		<div class="today animate__animated animate__bounceIn">
-			<div class="today__month">
-				<div class="month--container">
-					<div class="month__item">
-						<!-- 1st digit -->
-						<p></p>
-						<p></p>
-						<p></p>
-						<!-- black fill-->
-						<div class="month__black"></div>
-						<div class="month__white"></div>
-						<!-- slash -->
-						<p>/</p>
-						<div class="month__blackslash"></div>
-						<div class="month__blackslash-two"></div>
-						<div class="month__blackslash-three"></div>
-						<!-- slash white -->
-						<div class="month__blackslash-white"></div>
-						<div class="month__blackslash-two-white"></div>
-						<div class="month__blackslash-three-white"></div>
+		<div class="first">
+			<div class="today animate__animated animate__bounceIn">
+				<div class="today__month">
+					<div class="month--container">
+						<div class="month__item">
+							<!-- 1st digit -->
+							<p></p>
+							<p></p>
+							<p></p>
+							<!-- black fill-->
+							<div class="month__black"></div>
+							<div class="month__white"></div>
+							<!-- slash -->
+							<p>/</p>
+							<div class="month__blackslash"></div>
+							<div class="month__blackslash-two"></div>
+							<div class="month__blackslash-three"></div>
+							<!-- slash white -->
+							<div class="month__blackslash-white"></div>
+							<div class="month__blackslash-two-white"></div>
+							<div class="month__blackslash-three-white"></div>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="today__num">
-				<div class="weekday--container">
-					<div class="weekday__item">
-						<p></p>
-						<p></p>
-						<p></p>
-						<div class="weekday__black"></div>
-						<div class="weekday__white"></div>
+				<div class="today__num">
+					<div class="weekday--container">
+						<div class="weekday__item">
+							<p></p>
+							<p></p>
+							<p></p>
+							<div class="weekday__black"></div>
+							<div class="weekday__white"></div>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="today__word"></div>
+				<div class="today__word"></div>
 
-			<div class="today__temp">
-				<div class="temptoday--container">
-					<div class="temptoday__item">
-						<p>13&deg;</p>
-						<p>13&deg;</p>
+				<div class="today__temp">
+					<div class="temptoday--container">
+						<div class="temptoday__item">
+							<p>13&deg;</p>
+							<p>13&deg;</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="today__weather">
-				<div class="character">
-					<img
-						class="character__sprite"
-						src="./Images/sprites/weather_spritesheet4.png"
-						alt="weather"
-						srcset=""
-					/>
+				<div class="today__weather">
+					<div class="character">
+						<img
+							class="character__sprite"
+							src="./Images/sprites/weather_spritesheet4.png"
+							alt="weather"
+							srcset=""
+						/>
+					</div>
 				</div>
-			</div>
 
-			<div class="today__mmtemp">
-				<div class="mmtemp--container">
-					<p class="mmtemp__max">34&deg;</p>
-					<p class="mmtemp__dash">-</p>
-					<p class="mmtemp__min">4&deg;</p>
+				<div class="today__mmtemp">
+					<div class="mmtemp--container">
+						<p class="mmtemp__max">34&deg;</p>
+						<p class="mmtemp__dash">-</p>
+						<p class="mmtemp__min">4&deg;</p>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- The next days -->
+		<div class="all--container">
+			<!-- today -->
 
-		<div class="today animate__animated animate__bounceIn">
-			<div class="today__num">
-				<div class="weekday--container">
-					<div class="weekday__item">
-						<p></p>
-						<p></p>
-						<p></p>
-						<div class="weekday__black"></div>
-						<div class="weekday__white"></div>
+			<!-- The next days -->
+
+			<div>
+				<div class="today animate__animated animate__bounceIn">
+					<div class="today__num">
+						<div class="weekday--container">
+							<div class="weekday__item">
+								<p></p>
+								<p></p>
+								<p></p>
+								<div class="weekday__black"></div>
+								<div class="weekday__white"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="today__word"></div>
+
+					<div class="today__weather">
+						<div class="character">
+							<img
+								class="character__sprite"
+								src="./Images/sprites/weather_spritesheet4.png"
+								alt="weather"
+								srcset=""
+							/>
+						</div>
+					</div>
+
+					<div class="today__mmtemp">
+						<div class="mmtemp--container">
+							<p class="mmtemp__max">34&deg;</p>
+							<p class="mmtemp__dash">-</p>
+							<p class="mmtemp__min">4&deg;</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="today__word"></div>
+			<!-- 3rd day -->
+			<div>
+				<div class="today animate__animated animate__bounceIn">
+					<div class="today__num">
+						<div class="weekday--container">
+							<div class="weekday__item">
+								<p></p>
+								<p></p>
+								<p></p>
+								<div class="weekday__black"></div>
+								<div class="weekday__white"></div>
+							</div>
+						</div>
+					</div>
 
-			<div class="today__weather">
-				<div class="character">
-					<img
-						class="character__sprite"
-						src="./Images/sprites/weather_spritesheet4.png"
-						alt="weather"
-						srcset=""
-					/>
-				</div>
-			</div>
+					<div class="today__word"></div>
 
-			<div class="today__mmtemp">
-				<div class="mmtemp--container">
-					<p class="mmtemp__max">34&deg;</p>
-					<p class="mmtemp__dash">-</p>
-					<p class="mmtemp__min">4&deg;</p>
-				</div>
-			</div>
-		</div>
+					<div class="today__weather">
+						<div class="character">
+							<img
+								class="character__sprite"
+								src="./Images/sprites/weather_spritesheet4.png"
+								alt="weather"
+								srcset=""
+							/>
+						</div>
+					</div>
 
-		<!-- 3rd day -->
-		<div class="today animate__animated animate__bounceIn">
-			<div class="today__num">
-				<div class="weekday--container">
-					<div class="weekday__item">
-						<p></p>
-						<p></p>
-						<p></p>
-						<div class="weekday__black"></div>
-						<div class="weekday__white"></div>
+					<div class="today__mmtemp">
+						<div class="mmtemp--container">
+							<p class="mmtemp__max">34&deg;</p>
+							<p class="mmtemp__dash">-</p>
+							<p class="mmtemp__min">4&deg;</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="today__word"></div>
-
-			<div class="today__weather">
-				<div class="character">
-					<img
-						class="character__sprite"
-						src="./Images/sprites/weather_spritesheet4.png"
-						alt="weather"
-						srcset=""
-					/>
-				</div>
-			</div>
-
-			<div class="today__mmtemp">
-				<div class="mmtemp--container">
-					<p class="mmtemp__max">34&deg;</p>
-					<p class="mmtemp__dash">-</p>
-					<p class="mmtemp__min">4&deg;</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- 4th day -->
-		<div class="today animate__animated animate__bounceIn">
-			<div class="today__num">
-				<div class="weekday--container">
-					<div class="weekday__item">
-						<p></p>
-						<p></p>
-						<p></p>
-						<div class="weekday__black"></div>
-						<div class="weekday__white"></div>
+			<!-- 4th day -->
+			<div>
+				<div class="today animate__animated animate__bounceIn">
+					<div class="today__num">
+						<div class="weekday--container">
+							<div class="weekday__item">
+								<p></p>
+								<p></p>
+								<p></p>
+								<div class="weekday__black"></div>
+								<div class="weekday__white"></div>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
 
-			<div class="today__word"></div>
+					<div class="today__word"></div>
 
-			<div class="today__weather">
-				<div class="character">
-					<img
-						class="character__sprite"
-						src="./Images/sprites/weather_spritesheet4.png"
-						alt="weather"
-						srcset=""
-					/>
-				</div>
-			</div>
+					<div class="today__weather">
+						<div class="character">
+							<img
+								class="character__sprite"
+								src="./Images/sprites/weather_spritesheet4.png"
+								alt="weather"
+								srcset=""
+							/>
+						</div>
+					</div>
 
-			<div class="today__mmtemp">
-				<div class="mmtemp--container">
-					<p class="mmtemp__max">34&deg;</p>
-					<p class="mmtemp__dash">-</p>
-					<p class="mmtemp__min">4&deg;</p>
+					<div class="today__mmtemp">
+						<div class="mmtemp--container">
+							<p class="mmtemp__max">34&deg;</p>
+							<p class="mmtemp__dash">-</p>
+							<p class="mmtemp__min">4&deg;</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
