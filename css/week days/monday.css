@@ -1,3 +1,6 @@
+.monday {
+	transform: scale(1.4);
+}
 .week--container {
 	width: 200px;
 	height: 120px;

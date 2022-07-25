@@ -29,6 +29,13 @@
 	bottom: 17%;
 	right: 25%;
 }
+.today__word.monday {
+	transform: scale(1.25);
+	z-index: 4;
+	bottom: 20%;
+	right: 38%;
+}
+
 .today__temp {
 	transform: rotate(-15deg);
 	z-index: 0;

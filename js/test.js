@@ -93,6 +93,11 @@ const minTemp = document.querySelector('.mmtemp__min');
 const lue = fetch('./json/weathertemp.json').then((response) => {
 	response.json().then((result) => {
 		todayDate.innerHTML = result[date.getDay()];
+		if (date.getDay() == 1) {
+			todayDate.classList.add('monday');
+		} else {
+			todayDate.classList.remove('monday');
+		}
 	});
 });
 let date = new Date();
@@ -164,3 +169,5 @@ getCurrTemp();
 getCurrentDate();
 getCurrForecast();
 getMinMaxTemp();
+
+// gets all the 4 days
