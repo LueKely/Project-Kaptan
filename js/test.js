@@ -82,57 +82,56 @@ currentWeather().then((results) => {
 });
 // listcurrentWeather();
 
-const weekdayNum = document.querySelector('.weekday__item');
-const curTemp = document.querySelector('.temptoday__item');
+const weekdayNum = document.querySelectorAll('.weekday__item');
+const curTemp = document.querySelectorAll('.temptoday__item');
 const curMon = document.querySelector('.month__item');
-const todayDate = document.querySelector('.today__word');
-const weatherForecast = document.querySelector('.character__sprite');
-const maxTemp = document.querySelector('.mmtemp__max');
-const minTemp = document.querySelector('.mmtemp__min');
+const todayDate = document.querySelectorAll('.today__word');
+const weatherForecast = document.querySelectorAll('.character__sprite');
+const maxTemp = document.querySelectorAll('.mmtemp__max');
+const minTemp = document.querySelectorAll('.mmtemp__min');
 // gets the html day from the json
 const lue = fetch('./json/weathertemp.json').then((response) => {
 	response.json().then((result) => {
-		todayDate.innerHTML = result[date.getDay()];
 		if (date.getDay() == 1) {
-			todayDate.classList.add('monday');
+			todayDate[0].classList.add('monday');
 		} else {
-			todayDate.classList.remove('monday');
+			todayDate[0].classList.remove('monday');
 		}
+		todayDate[0].innerHTML = result[date.getDay()];
 	});
 });
 let date = new Date();
 
 //gets the curr temp
-function getCurrTemp() {
+function getCurrTemp(index) {
 	currentWeather().then((response) => {
-		curTemp.children[0].textContent = response.temp + '\u00B0';
-		curTemp.children[1].textContent = response.temp + '\u00B0';
+		curTemp[index].children[0].textContent = response.temp + '\u00B0';
+		curTemp[index].children[1].textContent = response.temp + '\u00B0';
 	});
 }
 
-//gets the forecast
-function getCurrForecast() {
-	currentWeather().then((response) => {
-		showForecast(response.weathercode);
-	});
-}
 //tells what class to add to the img
-function showForecast(input) {
+function showForecast(input, index) {
 	if (input == 3 || input == 0) {
-		weatherForecast.classList.add('sunny');
+		weatherForecast[index].classList.add('sunny');
 	} else if (input >= 1 && input < 45 && input != 3) {
-		weatherForecast.classList.add('cloudy');
+		weatherForecast[index].classList.add('cloudy');
 	} else if (input >= 51 && input <= 65) {
-		weatherForecast.classList.add('rainy');
+		weatherForecast[index].classList.add('rainy');
 	} else if (input >= 66 && input <= 77) {
-		weatherForecast.classList.add('snowy');
+		weatherForecast[index].classList.add('snowy');
 	} else if (input >= 80 && input <= 86) {
-		weatherForecast.classList.add('rainy');
+		weatherForecast[index].classList.add('rainy');
 	} else if (input >= 95 && input < 99) {
-		weatherForecast.classList.add('cloudy');
+		weatherForecast[index].classList.add('cloudy');
 	} else {
 		console.warn('forcast: somethign went wrong');
 	}
+} //gets the forecast
+function getCurrForecast(index) {
+	currentWeather().then((response) => {
+		showForecast(response.weathercode, index);
+	});
 }
 // this gets the month
 function getCurrentMonth() {
@@ -147,27 +146,66 @@ function getCurrentMonth() {
 	}
 }
 // gets the days
-function getCurrentDayNum() {
-	weekdayNum.children[0].textContent = date.getDate();
-	weekdayNum.children[1].textContent = date.getDate();
-	weekdayNum.children[2].textContent = date.getDate();
+function getCurrentDayNum(index) {
+	if (index == 0) {
+		weekdayNum[index].children[0].textContent = date.getDate();
+		weekdayNum[index].children[1].textContent = date.getDate();
+		weekdayNum[index].children[2].textContent = date.getDate();
+	} else {
+		weekdayNum[index].children[0].textContent = date.getDate() + index;
+		weekdayNum[index].children[1].textContent = date.getDate() + index;
+		weekdayNum[index].children[2].textContent = date.getDate() + index;
+	}
 }
 
 // gets the min and max temp
-function getMinMaxTemp() {
+function getMinMaxTemp(index) {
 	getForcast().then((response) => {
-		maxTemp.textContent = response.daily.temperature_2m_max[0] + 'º';
-		minTemp.textContent = response.daily.temperature_2m_min[0] + 'º';
+		maxTemp[index].textContent = response.daily.temperature_2m_max[index] + 'º';
+		minTemp[index].textContent = response.daily.temperature_2m_min[index] + 'º';
 	});
 }
 // initializes time
 function getCurrentDate() {
 	getCurrentMonth();
-	getCurrentDayNum();
+	getCurrentDayNum(0);
 }
-getCurrTemp();
+getCurrTemp(0);
 getCurrentDate();
-getCurrForecast();
-getMinMaxTemp();
+getCurrForecast(0);
+getMinMaxTemp(0);
 
-// gets all the 4 days
+// gets all the next 3 days
+const allDays = fetch('./json/weathertemp.json').then((response) => {
+	response.json().then((result) => {
+		for (let index = 1; index < 4; index++) {
+			if (date.getDay() + index == 1) {
+				todayDate[index].classList.add('monday');
+			} else {
+				todayDate[index].classList.remove('monday');
+			}
+			todayDate[index].innerHTML = result[output(index)];
+		}
+	});
+});
+
+// if it output gets pass 8 then it subtracts it
+function output(index) {
+	let input = date.getDay() + index;
+	let output;
+	output = input >= 7 ? (output = input - 7) : (output = input);
+
+	return output;
+}
+//gets the date of the next 3 days
+for (let index = 1; index < 4; index++) {
+	getCurrentDayNum(index);
+}
+
+// gets the forcast
+getForcast().then((response) => {
+	for (let index = 1; index < 4; index++) {
+		showForecast(response.daily.weathercode[index], index);
+		getMinMaxTemp(index);
+	}
+});
