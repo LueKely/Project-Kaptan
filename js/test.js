@@ -193,8 +193,10 @@ getForcast().then((response) => {
 		showForecast(response.daily.weathercode[index], index);
 		getMinMaxTemp(index);
 	}
-	loadingScreen.classList.add('disappear');
 	setTimeout(() => {
-		loadingScreen.classList.add('delete');
-	}, 1000);
+		loadingScreen.classList.add('disappear');
+		setTimeout(() => {
+			loadingScreen.classList.add('delete');
+		}, 1000);
+	}, 2000);
 });
