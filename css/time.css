@@ -1,0 +1,20 @@
+.time--container {
+	font-family: 'earwig factory rg';
+	color: white;
+	font-size: 5rem;
+}
+
+.time--container > div {
+	width: 350px;
+	height: 50px;
+	padding: 20px;
+}
+
+.time2 {
+	font-size: 4rem;
+	display: flex;
+}
+
+#am-pm {
+	margin-left: 10px;
+}

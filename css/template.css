@@ -1,12 +1,19 @@
 .today {
 	position: relative;
-	margin: auto;
+
 	width: 600px;
-	height: 500px;
+	height: 400px;
 
 	z-index: 0;
 }
-
+.first {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
+.first:hover {
+	transform: scale(1.2);
+}
 .today > div {
 	position: absolute;
 }
@@ -29,6 +36,13 @@
 	bottom: 17%;
 	right: 25%;
 }
+.today__word.monday {
+	transform: scale(1.2);
+	z-index: 4;
+	bottom: 22%;
+	right: 38%;
+}
+
 .today__temp {
 	transform: rotate(-15deg);
 	z-index: 0;
