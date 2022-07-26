@@ -1,11 +1,186 @@
 .load--container {
+	position: absolute;
 	width: 100vw;
 	height: 100vh;
-	background-color: #434443;
+	background-color: black;
+	z-index: 10;
+	top: 0;
+	left: 0;
+	opacity: 100%;
 }
 
-/* text */
-.load__text__container {
-	font-family: 'p5hatty';
+.load--container.disappear {
+	opacity: 0%;
+	transition: all 1s ease-in-out;
+}
+.load--container.disappear.delete {
+	display: none;
+}
+.load__item {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+}
+.load__hat {
+	margin: auto;
+
+	width: 500px;
+	height: 500px;
+}
+
+.load__hat__container {
+	position: relative;
+
+	width: 500px;
+	height: 500px;
+}
+
+/* spotlight container */
+.hat__spotlight {
+	position: absolute;
+
+	overflow: hidden;
+	width: 350px;
+	height: 350px;
+	left: 14%;
+	top: 14%;
+	z-index: 1;
+}
+/* spotlight image */
+.hat__spotlight__img {
+	transform: translate3d(-1025px, -10px, 0px);
+}
+
+/* hat shadow container */
+.hat__shadow {
+	position: absolute;
+	overflow: hidden;
+	width: 250px;
+	height: 250px;
+	z-index: 2;
+	left: 24%;
+	top: 27%;
+}
+/* hat img shadow */
+.hat__shadow__image {
+	transform: translate3d(0px, -230px, 0px);
+}
+/* hat obj container */
+.hat__obj {
+	position: absolute;
+	overflow: hidden;
+	width: 250px;
+	height: 220px;
+	z-index: 3;
+	left: 27%;
+	top: 27%;
+}
+/* hat img */
+.hat__obj__img {
+	transform: translate3d(0px, 0px, 0px);
+}
+
+/* hat flame container */
+
+.hat__flame {
+	position: absolute;
+	width: 140px;
+	height: 145px;
+	z-index: 4;
+	overflow: hidden;
+	left: 43%;
+	bottom: 32%;
+}
+/* hat flame img */
+.hat__flame__img {
+	transform: translate3d(-270px, 0px, 0px);
+	animation: moveflame 800ms steps(1) infinite;
+}
+
+.load__text__item {
+	text-align: center;
+	color: white;
+	font-family: p5hatty;
 	font-size: 3rem;
+}
+
+.load__text__item > .dot:first-child {
+	animation: dotAnimation 2s infinite ease-in-out;
+}
+
+.load__text__item > .dot:nth-child(2) {
+	animation: dotAnimation2 2s infinite ease-in-out;
+}
+.load__text__item > .dot:nth-child(3) {
+	animation: dotAnimation3 2s infinite ease-in-out;
+}
+
+@keyframes dotAnimation {
+	0%,
+	20% {
+		opacity: 0%;
+	}
+
+	30%,
+	100% {
+		opacity: 100%;
+	}
+}
+@keyframes dotAnimation2 {
+	0%,
+	40% {
+		opacity: 0%;
+	}
+
+	50%,
+	100% {
+		opacity: 100%;
+	}
+}
+@keyframes dotAnimation3 {
+	0%,
+	60% {
+		opacity: 0%;
+	}
+
+	70%,
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes moveflame {
+	0% {
+		transform: translate(-270px, 0px);
+	}
+	10% {
+		transform: translate(-420px, 0px);
+	}
+	20% {
+		transform: translate(-560px, 0px);
+	}
+	30% {
+		transform: translate(-700px, 0px);
+	}
+	40% {
+		transform: translate(-840px, 0px);
+	}
+	50% {
+		transform: translate(-280px, -150px);
+	}
+	60% {
+		transform: translate(-420px, -150px);
+	}
+	70% {
+		transform: translate(-560px, -150px);
+	}
+	80% {
+		transform: translate(-700px, -150px);
+	}
+	90% {
+		transform: translate(-840px, -150px);
+	}
+	100% {
+		transform: translate(-270px, 0px);
+	}
 }

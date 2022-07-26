@@ -97,7 +97,7 @@ function getCurrTemp(index) {
 function showForecast(input, index) {
 	if (input == 3 || input == 0) {
 		weatherForecast[index].classList.add('sunny');
-	} else if (input >= 1 && input < 45 && input != 3) {
+	} else if (input >= 1 && input <= 45 && input != 3) {
 		weatherForecast[index].classList.add('cloudy');
 	} else if (input >= 51 && input <= 65) {
 		weatherForecast[index].classList.add('rainy');
@@ -109,6 +109,7 @@ function showForecast(input, index) {
 		weatherForecast[index].classList.add('cloudy');
 	} else {
 		console.warn('forcast: somethign went wrong');
+		console.log(input);
 	}
 } //gets the forecast
 function getCurrForecast(index) {
@@ -184,10 +185,16 @@ for (let index = 1; index < 4; index++) {
 	getCurrentDayNum(index);
 }
 
+const loadingScreen = document.querySelector('.load--container');
+
 // gets the forcast
 getForcast().then((response) => {
 	for (let index = 1; index < 4; index++) {
 		showForecast(response.daily.weathercode[index], index);
 		getMinMaxTemp(index);
 	}
+	loadingScreen.classList.add('disappear');
+	setTimeout(() => {
+		loadingScreen.classList.add('delete');
+	}, 1000);
 });
