@@ -1,4 +1,5 @@
 .load--container {
+	display: none;
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
@@ -19,11 +20,9 @@
 .load__item {
 	width: 100vw;
 	height: 100vh;
-	position: relative;
 }
 .load__hat {
 	margin: auto;
-
 	width: 500px;
 	height: 500px;
 }
@@ -48,7 +47,7 @@
 }
 /* spotlight image */
 .hat__spotlight__img {
-	transform: translate3d(-1025px, -10px, 0px);
+	transform: translate3d(-1030px, -10px, 0px);
 }
 
 /* hat shadow container */

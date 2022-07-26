@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+	.load--container {
+		overflow-x: hidden;
+	}
+	.load__hat {
+		transform: scale(0.7);
+	}
+
+	.load__text__item {
+		font-size: 2rem;
+	}
+}
+@media screen and (max-width: 720px) {
+	.load--container {
+		overflow-x: hidden;
+	}
+	.load__hat {
+		width: 300px;
+		height: 300px;
+	}
+	.load__hat__container {
+		bottom: 30%;
+		right: 30%;
+		margin: auto;
+	}
+	.load__hat > .load__hat__container {
+		transform: scale(0.5);
+	}
+
+	.load__text__item {
+		font-size: 2rem;
+	}
+}

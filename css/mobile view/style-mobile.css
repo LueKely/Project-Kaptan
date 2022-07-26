@@ -1,0 +1,50 @@
+@media screen and (min-width: 768px) {
+	body {
+		overflow-y: visible;
+	}
+	.first {
+		width: 600px;
+		height: 300px;
+		transform: scale(0.7);
+	}
+	.first:hover {
+		transform: scale(0.85);
+	}
+	.all--container > .week--item {
+		width: 200px;
+		transform: scale(0.5);
+	}
+	.time--container {
+		font-size: 3rem;
+	}
+	.time2 {
+		font-size: 2rem;
+	}
+
+	.time--container > .week--item {
+		margin: auto;
+		width: 200px;
+		height: 30px;
+	}
+	.time--container {
+		width: 200px;
+	}
+	.all--container > .week--item:first-child {
+		margin-inline-start: 20px;
+	}
+
+	.all--container > .week--item:last-child {
+		margin-inline-end: auto;
+	}
+	.all--container > .week--item:nth-child(1):hover {
+		transform: scale(0.65) rotate(5deg);
+	}
+	.all--container > .week--item:nth-child(2):hover {
+		transform: scale(0.65) rotate(-5deg);
+	}
+	.all--container > .week--item:nth-child(3):hover {
+		transform: scale(0.65) rotate(5deg);
+	}
+}
+@media screen and (max-width: 720px) {
+}
