@@ -1,18 +1,24 @@
+.todayweather--container {
+	overflow: visible;
+	width: 100vw;
+	height: 350px;
+
+	margin: auto;
+}
+
 .today {
+	margin-inline: auto;
+
 	position: relative;
 
 	width: 600px;
-	height: 400px;
+	height: 350px;
 
 	z-index: 0;
 }
-.first {
-	width: 600px;
-	height: 400px;
-	margin: auto;
-}
-.first:hover {
-	transform: scale(1.2);
+
+.todayweather--container:hover {
+	transform: scale(1.1);
 }
 .today > div {
 	position: absolute;
@@ -20,21 +26,21 @@
 .today__month {
 	transform: scale(0.7);
 	bottom: 40%;
-	right: 43%;
+	right: 46%;
 }
 .today__num {
 	z-index: 3;
 	transform: rotate(-5deg);
 	bottom: 30%;
-	right: 10%;
+	right: 16%;
 }
 
 .today__word {
 	transform: scale(0.8);
-
+	color: black;
 	z-index: 4;
-	bottom: 17%;
-	right: 25%;
+	bottom: 12%;
+	right: 32%;
 }
 .today__word.monday {
 	transform: scale(1.2);
@@ -44,21 +50,21 @@
 }
 
 .today__temp {
-	transform: rotate(-15deg);
+	transform: rotate(-15deg) scale(0.9);
 	z-index: 0;
 	/* 
 	right: -17%;
 	bottom: 22%; */
 
 	right: -16%;
-	bottom: 10%;
+	bottom: 7%;
 }
 .today__weather {
-	bottom: 50%;
-	right: 18%;
+	bottom: 58%;
+	right: 24%;
 }
 .today__mmtemp {
 	z-index: 5;
-	bottom: 12%;
-	right: 30%;
+	bottom: 5%;
+	right: 35%;
 }

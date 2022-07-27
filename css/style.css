@@ -45,7 +45,7 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 100vw;
-	height: 100vh;
+
 	background-color: black;
 	background-image: url('../Images/bgi.png');
 	background-image: url('https://raw.githubusercontent.com/LueKely/Project-Kaptan/main/Images/bgi.png');
@@ -53,7 +53,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 * {

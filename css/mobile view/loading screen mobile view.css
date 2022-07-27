@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 	.load--container {
 		overflow-x: hidden;
 	}
@@ -24,7 +24,7 @@
 		margin: auto;
 	}
 	.load__hat > .load__hat__container {
-		transform: scale(0.5);
+		transform: scale(1);
 	}
 
 	.load__text__item {

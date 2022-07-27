@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/week days/monday.css" />
+		<link rel="stylesheet" href="./css/week days/tuesday.css" />
+		<link rel="stylesheet" href="./css/week days/wednesday.css" />
+		<link rel="stylesheet" href="./css/week days/thursday.css" />
+		<link rel="stylesheet" href="./css/week days/friday.css" />
+		<link rel="stylesheet" href="./css/week days/saturday.css" />
+		<link rel="stylesheet" href="./css/week days/sunday.css" />
+		<link rel="stylesheet" href="./css/numbers/months.css" />
+		<link rel="stylesheet" href="./css/numbers/weekdays.css" />
+		<link rel="stylesheet" href="./css/numbers/temptoday.css" />
+		<link rel="stylesheet" href="./css/sprites.css" />
+		<link rel="stylesheet" href="./css/numbers/minmaxtemp.css" />
+		<link rel="stylesheet" href="./css/time.css" />
+		<link rel="icon" href="./Images/sprites/logo.png" />
+		<!-- <link rel="stylesheet" href="./css/week-box.css" /> -->
+		<link rel="stylesheet" href="./css/loadingscreen.css" />
+		<link rel="stylesheet" href="./todayweather.css" />
+		<link rel="stylesheet" href="followingdays.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
+
+		<!-- mobile view css -->
+		<link
+			rel="stylesheet"
+			href="./css/mobile view/loading screen mobile view.css"
+		/>
+		<link rel="stylesheet" href="./css/mobile view/style-mobile.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<!-- time -->
+		<div class="time--container">
+			<div class="time1">Evening</div>
+			<div class="time2">
+				<p class="time__currently"></p>
+				<p id="am-pm"></p>
+			</div>
+		</div>
+		<!-- current day -->
+		<div class="todayweather--container">
+			<div class="todayweather--item">
+				<div class="todayweather">
+					<div class="today">
+						<div class="today__month">
+							<div class="month--container">
+								<div class="month__item">
+									<!-- 1st digit -->
+									<p></p>
+									<p></p>
+									<p></p>
+									<!-- black fill-->
+									<div class="month__black"></div>
+									<div class="month__white"></div>
+									<!-- slash -->
+									<p>/</p>
+									<div class="month__blackslash"></div>
+									<div class="month__blackslash-two"></div>
+									<div class="month__blackslash-three"></div>
+									<!-- slash white -->
+									<div class="month__blackslash-white"></div>
+									<div class="month__blackslash-two-white"></div>
+									<div class="month__blackslash-three-white"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="today__num">
+							<div class="weekday--container">
+								<div class="weekday__item">
+									<p></p>
+									<p></p>
+									<p></p>
+									<div class="weekday__black"></div>
+									<div class="weekday__white"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="today__word"></div>
+
+						<div class="today__temp">
+							<div class="temptoday--container">
+								<div class="temptoday__item">
+									<p>13&deg;</p>
+									<p>13&deg;</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="today__weather">
+							<div class="character">
+								<img
+									class="character__sprite"
+									src="./Images/sprites/weather_spritesheet4.png"
+									alt="weather"
+									srcset=""
+								/>
+							</div>
+						</div>
+
+						<div class="today__mmtemp">
+							<div class="mmtemp--container">
+								<p class="mmtemp__max">34&deg;</p>
+								<p class="mmtemp__dash">-</p>
+								<p class="mmtemp__min">4&deg;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="following--days">
+			<!-- 2nd day -->
+			<div class="following--items">
+				<div class="week--item">
+					<div class="today">
+						<div class="today__num">
+							<div class="weekday--container">
+								<div class="weekday__item">
+									<p></p>
+									<p></p>
+									<p></p>
+									<div class="weekday__black"></div>
+									<div class="weekday__white"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="today__word"></div>
+
+						<div class="today__weather">
+							<div class="character">
+								<img
+									class="character__sprite"
+									src="./Images/sprites/weather_spritesheet4.png"
+									alt="weather"
+									srcset=""
+								/>
+							</div>
+						</div>
+
+						<div class="today__mmtemp">
+							<div class="mmtemp--container">
+								<p class="mmtemp__max">34&deg;</p>
+								<p class="mmtemp__dash">-</p>
+								<p class="mmtemp__min">4&deg;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="following--items">
+				<div class="week--item">
+					<div class="today">
+						<div class="today__num">
+							<div class="weekday--container">
+								<div class="weekday__item">
+									<p></p>
+									<p></p>
+									<p></p>
+									<div class="weekday__black"></div>
+									<div class="weekday__white"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="today__word"></div>
+
+						<div class="today__weather">
+							<div class="character">
+								<img
+									class="character__sprite"
+									src="./Images/sprites/weather_spritesheet4.png"
+									alt="weather"
+									srcset=""
+								/>
+							</div>
+						</div>
+
+						<div class="today__mmtemp">
+							<div class="mmtemp--container">
+								<p class="mmtemp__max">34&deg;</p>
+								<p class="mmtemp__dash">-</p>
+								<p class="mmtemp__min">4&deg;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="following--items">
+				<div class="week--item">
+					<div class="today">
+						<div class="today__num">
+							<div class="weekday--container">
+								<div class="weekday__item">
+									<p></p>
+									<p></p>
+									<p></p>
+									<div class="weekday__black"></div>
+									<div class="weekday__white"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="today__word"></div>
+
+						<div class="today__weather">
+							<div class="character">
+								<img
+									class="character__sprite"
+									src="./Images/sprites/weather_spritesheet4.png"
+									alt="weather"
+									srcset=""
+								/>
+							</div>
+						</div>
+
+						<div class="today__mmtemp">
+							<div class="mmtemp--container">
+								<p class="mmtemp__max">34&deg;</p>
+								<p class="mmtemp__dash">-</p>
+								<p class="mmtemp__min">4&deg;</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="load--container">
+			<div class="load__item">
+				<div class="load__hat">
+					<div class="load__hat__container">
+						<div class="hat__spotlight">
+							<img
+								src="./Images/sprites/PlayStation 4 - Persona 5 Royal - Loading Screens.png"
+								alt="spotlight"
+								class="hat__spotlight__img"
+							/>
+						</div>
+						<div class="hat__shadow">
+							<img
+								src="./Images/sprites/PlayStation 4 - Persona 5 Royal - Loading Screens.png"
+								alt="shadow"
+								class="hat__shadow__image"
+							/>
+						</div>
+
+						<div class="hat__obj">
+							<img
+								src="./Images/sprites/PlayStation 4 - Persona 5 Royal - Loading Screens.png"
+								alt="hat"
+								class="hat__obj__img"
+							/>
+						</div>
+						<div class="hat__flame">
+							<img
+								src="./Images/sprites/PlayStation 4 - Persona 5 Royal - Loading Screens.png"
+								alt="flame"
+								class="hat__flame__img"
+							/>
+						</div>
+					</div>
+				</div>
+
+				<div class="load__text__container">
+					<p class="load__text__item">
+						Fetching Data<span class="dot">.</span><span class="dot">.</span
+						><span class="dot">.</span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="./js/time.js"></script>
+		<script src="./js/test.js"></script>
+	</body>
+</html>

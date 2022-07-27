@@ -1,19 +1,9 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 720px) {
 	body {
 		overflow-y: visible;
 	}
-	.first {
-		width: 600px;
-		height: 300px;
-		transform: scale(0.7);
-	}
-	.first:hover {
-		transform: scale(0.85);
-	}
-	.all--container > .week--item {
-		width: 200px;
-		transform: scale(0.5);
-	}
+	/* date and time in mobile view */
+
 	.time--container {
 		font-size: 3rem;
 	}
@@ -21,30 +11,83 @@
 		font-size: 2rem;
 	}
 
-	.time--container > .week--item {
-		margin: auto;
-		width: 200px;
-		height: 30px;
+	/* today's temp */
+
+	/* current weather */
+	.todayweather--container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 450px;
 	}
-	.time--container {
-		width: 200px;
+	.todayweather--item {
+		position: relative;
+
+		width: 370px;
+		height: 370px;
 	}
-	.all--container > .week--item:first-child {
-		margin-inline-start: 20px;
+	.todayweather--item > .todayweather {
+		position: absolute;
+		transform: scale(0.8);
+		bottom: -11%;
+		right: -10%;
 	}
 
-	.all--container > .week--item:last-child {
-		margin-inline-end: auto;
+	.todayweather--item > .todayweather > .today {
+		margin-inline: auto;
+
+		position: relative;
+
+		width: 450px;
+		height: 450px;
+
+		z-index: 0;
 	}
-	.all--container > .week--item:nth-child(1):hover {
-		transform: scale(0.65) rotate(5deg);
+
+	/* cancer */
+
+	.todayweather--item > .todayweather > .today > .today__month {
+		transform: scale(0.6);
+		bottom: 60%;
+		right: 35%;
 	}
-	.all--container > .week--item:nth-child(2):hover {
-		transform: scale(0.65) rotate(-5deg);
+	.todayweather--item > .todayweather > .today > .today__num {
+		z-index: 3;
+		transform: rotate(-5deg);
+		bottom: 45%;
+		right: -3%;
 	}
-	.all--container > .week--item:nth-child(3):hover {
-		transform: scale(0.65) rotate(5deg);
+
+	.todayweather--item > .todayweather > .today > .today__word {
+		transform: scale(0.8);
+		color: black;
+		z-index: 4;
+		bottom: 27%;
+		right: 27%;
 	}
-}
-@media screen and (max-width: 720px) {
+	.todayweather--item > .todayweather > .today > .today__word.monday {
+		transform: scale(1.2);
+		z-index: 4;
+		bottom: 27%;
+		right: 38%;
+	}
+	.todayweather--item > .todayweather > .today > .today__weather {
+		bottom: 68%;
+		right: 7%;
+	}
+	.todayweather--item > .todayweather > .today > .today__mmtemp {
+		z-index: 5;
+		bottom: 22%;
+		right: 25%;
+	}
+	.today__temp {
+		transform: scale(0.8);
+		z-index: 0;
+		/* 
+		right: -17%;
+		bottom: 22%; */
+
+		right: 10%;
+		bottom: -15%;
+	}
 }

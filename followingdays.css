@@ -1,0 +1,31 @@
+.following--days {
+	width: 100vw;
+	height: auto;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-block: 10px;
+}
+.following--items {
+	overflow: hidden;
+
+	position: relative;
+	margin: 10px;
+	width: 300px;
+	height: 250px;
+}
+.following--items > .week--item {
+	position: absolute;
+	transform: scale(0.7);
+	left: -40%;
+	top: -20%;
+}
+.following--days > .following--items:nth-child(1):hover,
+.following--days > .following--items:nth-child(3):hover {
+	transform: scale(1.1) rotate(5deg);
+}
+.following--days > .following--items:nth-child(2):hover {
+	transform: scale(1.1) rotate(-5deg);
+}
