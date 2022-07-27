@@ -2,5 +2,8 @@
 	"liveServer.settings.port": 5501,
 	"html.format.contentUnformatted": "",
 	"emmet.triggerExpansionOnTab": true,
-	"files.associations": { "*html": "html" }
+	"files.associations": {
+		"*html": "html"
+	},
+	"livePreview.defaultPreviewPath": "/html/loading-screen.html"
 }
