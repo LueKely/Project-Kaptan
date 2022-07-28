@@ -33,7 +33,7 @@
 	}
 	.todayweather--item > .todayweather {
 		position: absolute;
-		transform: scale(0.8);
+		transform: scale(0.7);
 		bottom: -11%;
 		right: -10%;
 	}

@@ -1,11 +1,3 @@
-.todayweather--container {
-	overflow: visible;
-	width: 100vw;
-	height: 350px;
-
-	margin: auto;
-}
-
 .today {
 	margin-inline: auto;
 
@@ -17,8 +9,9 @@
 	z-index: 0;
 }
 
-.todayweather--container:hover {
-	transform: scale(1.1);
+.todayweather--container > .todayweather--item > .todayweather > .today:hover {
+	transition: transform 50ms ease-in;
+	transform: scale(1.2);
 }
 .today > div {
 	position: absolute;

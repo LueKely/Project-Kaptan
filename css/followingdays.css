@@ -25,7 +25,9 @@
 .following--days > .following--items:nth-child(1):hover,
 .following--days > .following--items:nth-child(3):hover {
 	transform: scale(1.1) rotate(5deg);
+	transition: transform 50ms ease-in;
 }
 .following--days > .following--items:nth-child(2):hover {
 	transform: scale(1.1) rotate(-5deg);
+	transition: transform 50ms ease-in;
 }
