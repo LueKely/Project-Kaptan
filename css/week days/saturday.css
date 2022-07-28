@@ -5,7 +5,7 @@
 /* S  */
 .week > .week__sat:nth-child(1) {
 	transform: scale(1.1, 2.2) rotate(-3deg);
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'fgm';
 	font-weight: 900;
 	-webkit-text-stroke: 2px;
 }
@@ -13,14 +13,14 @@
 .week > .week__sat:nth-child(2) {
 	z-index: 2;
 	transform: scale(1.1, 2.2) rotate(-3deg);
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'fgm';
 	-webkit-text-stroke: 12px white;
 }
 /* S black */
 .week > .week__sat:nth-child(3) {
 	z-index: 1;
 	transform: scale(1.5, 2.5) rotate(-3deg);
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'fgm';
 	-webkit-text-stroke: 16px black;
 	bottom: 42%;
 }
@@ -73,7 +73,7 @@
 }
 /* T */
 .week > .week__sat:nth-child(8) {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'fgm';
 	transform: scale(1.8, 2.2);
 	bottom: 50%;
 	right: 65%;
@@ -156,7 +156,7 @@
 }
 /* Y */
 .week > .week__sat:nth-child(18) {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'fgm';
 
 	transform: scale(1.5, 1.9);
 	font-size: 5rem;
@@ -166,7 +166,7 @@
 }
 /* Y white */
 .week > .week__sat:nth-child(19) {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'fgm';
 
 	transform: scale(1.7, 2);
 	z-index: 2;
@@ -248,7 +248,7 @@
 /* Y black */
 
 .week > .week__sat:nth-child(26) {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'fgm';
 
 	transform: scale(2, 2.1);
 	z-index: 1;

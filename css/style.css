@@ -34,6 +34,10 @@
 	font-family: 'noto sans';
 	src: url('../Fonts/NotoSans-Black.ttf');
 }
+@font-face {
+	font-family: 'fgm';
+	src: url(../Fonts/Franklin\ Gothic\ Medium\ Regular.ttf);
+}
 :root {
 	--red-color: #ff0505;
 	--bg-color: #d84141;
