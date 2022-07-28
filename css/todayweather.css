@@ -25,8 +25,8 @@
 }
 .today__month {
 	transform: scale(0.7);
-	bottom: 40%;
-	right: 46%;
+	bottom: 45%;
+	right: 50%;
 }
 .today__num {
 	z-index: 3;
@@ -42,13 +42,21 @@
 	bottom: 12%;
 	right: 32%;
 }
-.today__word.monday {
+.today__word.mon {
 	transform: scale(1.2);
 	z-index: 4;
 	bottom: 22%;
 	right: 38%;
 }
+.today__word > .week.fri {
+	bottom: 22%;
+	right: -4%;
+}
 
+.today__word > .week.sun {
+	bottom: 22%;
+	right: -10%;
+}
 .today__temp {
 	transform: rotate(-15deg) scale(0.9);
 	z-index: 0;

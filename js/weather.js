@@ -1,5 +1,6 @@
 const url =
 	'https://api.open-meteo.com/v1/forecast?latitude=14.52&longitude=121.05&hourly=temperature_2m,relativehumidity_2m,weathercode&daily=weathercode,temperature_2m_max,temperature_2m_min&current_weather=true&timezone=Asia%2FSingapore';
+
 async function getForcast() {
 	const response = await fetch(url);
 	const data = await response.json();
@@ -119,16 +120,30 @@ function getCurrForecast(index) {
 }
 // this gets the month
 function getCurrentMonth() {
+	curMon.children[0].textContent = date.getMonth() + 1;
+	curMon.children[1].textContent = date.getMonth() + 1;
+	curMon.children[2].textContent = date.getMonth() + 1;
 	if (date.getMonth() + 1 > 10) {
-		curMon.children[0].textContent = date.getMonth() + 1;
-		curMon.children[1].textContent = date.getMonth() + 1;
-		curMon.children[2].textContent = date.getMonth() + 1;
+		curMon.children[3].classList.add('month__black');
+		curMon.children[4].classList.add('month__white');
 	} else {
-		curMon.children[0].textContent = `0${date.getMonth() + 1}`;
-		curMon.children[1].textContent = `0${date.getMonth() + 1}`;
-		curMon.children[2].textContent = `0${date.getMonth() + 1}`;
+		curMon.children[3].classList.remove('month__black');
+		curMon.children[4].classList.remove('month__white');
 	}
 }
+// just in case
+// function getCurrentMonth() {
+// 	if (date.getMonth() + 1 > 10) {
+// 		curMon.children[0].textContent = date.getMonth() + 1;
+// 		curMon.children[1].textContent = date.getMonth() + 1;
+// 		curMon.children[2].textContent = date.getMonth() + 1;
+// 	} else {
+// 		curMon.children[0].textContent = `0${date.getMonth() + 1}`;
+// 		curMon.children[1].textContent = `0${date.getMonth() + 1}`;
+// 		curMon.children[2].textContent = `0${date.getMonth() + 1}`;
+// 	}
+// }
+
 // gets the days
 function getCurrentDayNum(index) {
 	if (index == 0) {
