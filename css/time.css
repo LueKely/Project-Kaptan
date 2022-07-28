@@ -1,7 +1,7 @@
 .time--container {
 	font-family: 'earwig factory rg';
 	color: white;
-	font-size: 5rem;
+	font-size: 4rem;
 	width: auto;
 }
 .time1 {
@@ -18,9 +18,9 @@
 	margin: 15px;
 	transform: skew(-15deg);
 	background-color: black;
-	width: 300px;
+	width: 200px;
 	padding: 10px;
-	font-size: 4rem;
+	font-size: 3rem;
 	display: flex;
 }
 .time__currently,
