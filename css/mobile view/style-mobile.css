@@ -1,8 +1,3 @@
-@media screen and (max-width: 900px) {
-	.load--container {
-		height: 120vh;
-	}
-}
 
 @media screen and (max-width: 720px) {
 	body {

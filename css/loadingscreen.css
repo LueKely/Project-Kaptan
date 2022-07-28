@@ -1,6 +1,7 @@
 .load--container {
 	position: absolute;
 	width: 100vw;
+	height: 120vh;
 	background-color: black;
 	z-index: 10;
 	top: 0;

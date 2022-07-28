@@ -25,13 +25,13 @@
 	right: 25%;
 	color: white;
 	z-index: 3;
-	bottom: 25%;
+	bottom: 26%;
 }
 .month__item > p:nth-child(2) {
 	right: 25%;
 	color: black;
 	z-index: 2;
-	bottom: 25%;
+	bottom: 26%;
 	-webkit-text-stroke: 20px;
 }
 
@@ -40,7 +40,7 @@
 	color: white;
 	z-index: 1;
 	-webkit-text-stroke: 30px;
-	bottom: 25%;
+	bottom: 26%;
 }
 
 .month__item > .month__black {
