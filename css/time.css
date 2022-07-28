@@ -4,10 +4,28 @@
 	font-size: 5rem;
 	width: auto;
 }
-
+.time1 {
+	margin: 15px;
+	transform: skew(-15deg);
+	background-color: black;
+	width: 340px;
+	padding-inline: 10px;
+}
+.time1 > p {
+	transform: skew(15deg);
+}
 .time2 {
+	margin: 15px;
+	transform: skew(-15deg);
+	background-color: black;
+	width: 300px;
+	padding: 10px;
 	font-size: 4rem;
 	display: flex;
+}
+.time__currently,
+#am-pm {
+	transform: skew(15deg);
 }
 
 #am-pm {

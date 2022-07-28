@@ -7,7 +7,12 @@
 	.time--container {
 		font-size: 4rem;
 	}
+	.time1 {
+		width: 260px;
+	}
+
 	.time2 {
+		width: 210px;
 		font-size: 3rem;
 	}
 
@@ -49,7 +54,7 @@
 	.todayweather--item > .todayweather > .today > .today__month {
 		transform: scale(0.6);
 		bottom: 60%;
-		right: 35%;
+		right: 40%;
 	}
 	.todayweather--item > .todayweather > .today > .today__num {
 		z-index: 3;

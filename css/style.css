@@ -56,6 +56,14 @@ body {
 	overflow-x: hidden;
 }
 
+body.day {
+	background-image: url('../Images/background/day.png');
+}
+
+body.night {
+	background-image: url('../Images/background/night.png');
+}
+
 * {
 	margin: 0;
 	padding: 0;

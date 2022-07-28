@@ -1,11 +1,13 @@
 const dayTime = document.querySelector('.time1');
 const currentTime = document.querySelector('.time__currently');
 const amPm = document.getElementById('am-pm');
+
 function getDayTime() {
 	let date = new Date();
 	let hours = date.getHours();
+
 	if (hours >= 6 && hours < 12) {
-		dayTime.textContent = 'Morning';
+		dayTime.children[0].textContent = 'Morning';
 	} else if (hours >= 12 && hours < 17) {
 		dayTime.textContent = 'Afternoon';
 	} else if (hours >= 17 && hours < 22) {
@@ -15,7 +17,15 @@ function getDayTime() {
 	} else {
 		dayTime.textContent = 'error';
 	}
+	getBackground(hours);
 }
+
+function getBackground(time) {
+	if (time < 17) {
+		document.body.classList.add('day');
+	} else document.body.classList.add('night');
+}
+
 function getAmPm() {
 	let date = new Date();
 	let hours = date.getHours();
