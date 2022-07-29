@@ -11,9 +11,7 @@
 	width: 340px;
 	padding-inline: 10px;
 }
-.time2 {
-	width: 320px;
-}
+
 .time1 > p {
 	transform: skew(15deg);
 }
@@ -21,7 +19,7 @@
 	margin: 15px;
 	transform: skew(-15deg);
 	background-color: black;
-	width: 200px;
+	width: 220px;
 	padding: 10px;
 	font-size: 3rem;
 	display: flex;
