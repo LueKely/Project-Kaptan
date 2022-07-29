@@ -212,6 +212,7 @@ getForcast().then((response) => {
 	}
 	setTimeout(() => {
 		loadingScreen.classList.add('disappear');
+		document.querySelector('.following--days').style.display = 'flex';
 		setTimeout(() => {
 			loadingScreen.classList.add('delete');
 		}, 1000);

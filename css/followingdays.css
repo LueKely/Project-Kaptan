@@ -1,8 +1,8 @@
 .following--days {
+	display: none;
 	width: 100vw;
 	height: auto;
 
-	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
