@@ -45,7 +45,7 @@
 }
 /* D */
 .week > .week__sun:nth-child(7) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 	transform: scale(0.9, 1.7) rotate(-10deg);
 	right: 34%;
 	bottom: 47%;
@@ -90,7 +90,7 @@
 }
 /* Y */
 .week > .week__sun:nth-child(12) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 
 	transform: scale(1.5, 2.1);
 	font-size: 5rem;
@@ -100,7 +100,7 @@
 }
 /* Y white */
 .week > .week__sun:nth-child(13) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 
 	transform: scale(1.7, 2.3);
 	z-index: 2;
@@ -170,7 +170,7 @@
 }
 /* Y */
 .week > .week__sun:nth-child(20) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 
 	transform: scale(2, 2.5);
 	z-index: 1;

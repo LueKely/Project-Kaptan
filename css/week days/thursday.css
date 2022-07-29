@@ -152,7 +152,7 @@
 }
 /* R */
 .week > .week__thu:nth-child(14) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 	transform: scale(1.35, 2.15) rotate(2deg);
 	font-weight: bolder;
 	bottom: 35%;
@@ -160,7 +160,7 @@
 }
 /* R white */
 .week > .week__thu:nth-child(15) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 	transform: rotate(2deg) scale(1.4, 2);
 	z-index: 2;
 	color: white;
@@ -171,7 +171,7 @@
 }
 /* R black */
 .week > .week__thu:nth-child(16) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 	transform: rotate(2deg) scale(1.7, 1.9);
 	z-index: 1;
 	font-size: 4.6rem;
@@ -210,7 +210,7 @@
 
 /* D */
 .week > .week__thu:nth-child(20) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 	transform: scale(1.2, 2.2) rotate(2deg);
 
 	bottom: 35%;
@@ -294,7 +294,7 @@
 
 /* Y */
 .week__thu:nth-child(28) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 
 	transform: rotate(5deg) scale(1.5, 2);
 	font-size: 5rem;
@@ -304,7 +304,7 @@
 }
 /* Y white */
 .week__thu:nth-child(29) {
-	font-family: 'fgm';
+	font-family: 'Franklin Gothic Medium', 'fgm';
 
 	transform: rotate(5deg) scale(1.5, 2);
 	z-index: 2;
