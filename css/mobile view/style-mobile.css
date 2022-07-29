@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 720px) {
 	body {
 		overflow-y: visible;
@@ -11,7 +10,9 @@
 	.time1 {
 		width: 260px;
 	}
-
+	.time1.aft {
+		width: 270px;
+	}
 	.time2 {
 		width: 210px;
 		font-size: 3rem;

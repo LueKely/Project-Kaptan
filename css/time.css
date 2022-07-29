@@ -11,6 +11,9 @@
 	width: 340px;
 	padding-inline: 10px;
 }
+.time2 {
+	width: 320px;
+}
 .time1 > p {
 	transform: skew(15deg);
 }

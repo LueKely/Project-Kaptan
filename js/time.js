@@ -1,7 +1,7 @@
 const dayTime = document.querySelector('.time1');
 const currentTime = document.querySelector('.time__currently');
 const amPm = document.getElementById('am-pm');
-
+const time1 = document.querySelector('.time1');
 function getDayTime() {
 	let date = new Date();
 	let hours = date.getHours();
@@ -10,6 +10,7 @@ function getDayTime() {
 		dayTime.children[0].textContent = 'Morning';
 	} else if (hours >= 12 && hours < 17) {
 		dayTime.textContent = 'Afternoon';
+		time1.classList.add('aft');
 	} else if (hours >= 17 && hours < 22) {
 		dayTime.textContent = 'evening';
 	} else if (hours >= 22 || hours <= 6) {
