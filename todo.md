@@ -1,6 +1,6 @@
 # todo list
 
-- do mobile view _done_
+- you're gonna have a bad time doing the modal
 
 ## DONE
 

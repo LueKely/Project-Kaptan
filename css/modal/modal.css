@@ -1,0 +1,13 @@
+.modal-btn {
+	overflow: hidden;
+	margin: auto;
+	height: 120px;
+	width: 250px;
+}
+.modal-btn__img {
+	transform: translate(-797px, -390px);
+}
+.modal-btn:hover {
+	transform: scale(1.2);
+	transition: transform 60ms ease-in;
+}
