@@ -146,14 +146,16 @@ function getCurrentMonth() {
 
 // gets the days
 function getCurrentDayNum(index) {
-	if (index == 0) {
-		weekdayNum[index].children[0].textContent = date.getDate();
-		weekdayNum[index].children[1].textContent = date.getDate();
-		weekdayNum[index].children[2].textContent = date.getDate();
+	let day = date.getDate() + index;
+	day > 31 ? (day = day - 31) : (day = day);
+	if (day < 10) {
+		weekdayNum[index].children[0].textContent = '0' + day;
+		weekdayNum[index].children[1].textContent = '0' + day;
+		weekdayNum[index].children[2].textContent = '0' + day;
 	} else {
-		weekdayNum[index].children[0].textContent = date.getDate() + index;
-		weekdayNum[index].children[1].textContent = date.getDate() + index;
-		weekdayNum[index].children[2].textContent = date.getDate() + index;
+		weekdayNum[index].children[0].textContent = day;
+		weekdayNum[index].children[1].textContent = day;
+		weekdayNum[index].children[2].textContent = day;
 	}
 }
 

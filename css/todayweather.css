@@ -35,11 +35,11 @@
 	bottom: 12%;
 	right: 32%;
 }
-.today__word.mon {
+.today__word > .week--container.mon {
 	transform: scale(1.2);
 	z-index: 4;
 	bottom: 22%;
-	right: 38%;
+	right: 40%;
 }
 .today__word > .week.fri {
 	bottom: 22%;
