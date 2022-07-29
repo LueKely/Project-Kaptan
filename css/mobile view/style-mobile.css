@@ -17,8 +17,12 @@
 		width: 210px;
 		font-size: 3rem;
 	}
-
-	/* today's temp */
+	/* ff items */
+	.following--items > .week--item {
+		transform: scale(0.55);
+		left: -50%;
+		top: -20%;
+	}
 
 	/* current weather */
 	.todayweather--container {
