@@ -1,3 +1,4 @@
+/* modal container */
 .modal-btn {
 	overflow: hidden;
 	margin: auto;
@@ -10,4 +11,127 @@
 .modal-btn:hover {
 	transform: scale(1.2);
 	transition: transform 60ms ease-in;
+}
+
+/* container */
+.modal--container {
+	display: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: blanchedalmond;
+}
+
+/* morgana in neutral*/
+.modal__morgana.neutral {
+	margin: 200px;
+	position: relative;
+	background-color: brown;
+	width: 200px;
+	height: 230px;
+}
+
+.modal__morgana.neutral > .morgana__body {
+	z-index: 0;
+	position: absolute;
+
+	width: 175px;
+	height: 210px;
+	overflow: hidden;
+	left: 6%;
+	bottom: 5%;
+}
+
+/* morgana body */
+.modal__morgana.neutral > .morgana__body > .body {
+	transform: translate(-86px, -50px);
+	/* transform: translate(-86px, -1114px); */
+	/* transform: translate(-86px, -1380px); */
+}
+
+/* morgana eyes */
+.modal__morgana.neutral > .morgana__eyes {
+	z-index: 1;
+	position: absolute;
+	width: 130px;
+	height: 120px;
+
+	overflow: hidden;
+	/* bottom: 39.6%;
+	left: 8.5%; */
+	bottom: 39.7%;
+	left: 8.5%;
+}
+.modal__morgana.neutral > .morgana__eyes > .eye {
+	transform: translate(-411px, -30px);
+	animation: neutralBlink 3s infinite steps(1);
+}
+/* morgana__mouth */
+.modal__morgana.neutral > .morgana__mouth {
+	z-index: 2;
+	width: 115px;
+	height: 40px;
+	position: absolute;
+
+	overflow: hidden;
+	/* left: 16.8%; */
+	left: 16.85%;
+	/* bottom: 30.6%; */
+	bottom: 30.94%;
+}
+
+.modal__morgana.neutral > .morgana__mouth > .mouth {
+	transform: translate(-565px, -1px);
+	animation: neutralTalk 500ms infinite steps(1);
+}
+
+@keyframes neutralTalk {
+	0%,
+	30% {
+		transform: translate(-565px, -1px);
+	}
+	31%,
+	60% {
+		transform: translate(-703px, -1px);
+	}
+	61%,
+	100% {
+		transform: translate(-841px, -1px);
+	}
+}
+@keyframes neutralBlink {
+	0%,
+	70% {
+		opacity: 0%;
+	}
+	71% {
+		opacity: 100%;
+		transform: translate(-273px, -30px);
+	}
+
+	75% {
+		opacity: 100%;
+		transform: translate(-411px, -30px);
+	}
+	76%,
+	100% {
+		opacity: 0%;
+	}
+}
+
+.body__happy {
+	transform: translate(-86px, -315px);
+}
+
+.body__mad {
+	transform: translate(-86px, -582px);
+}
+
+.body__catious {
+	transform: translate(-86px, -848px);
+}
+.body__troubled {
+	transform: translate(-86px, -1114px);
+}
+.body__sad {
+	transform: translate(-86px, -1380px);
 }
