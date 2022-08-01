@@ -22,7 +22,7 @@
 }
 
 /* morgana in neutral*/
-.modal__morgana.neutral {
+.modal__morgana {
 	margin: 200px;
 	position: relative;
 	background-color: brown;
@@ -30,7 +30,7 @@
 	height: 230px;
 }
 
-.modal__morgana.neutral > .morgana__body {
+.morgana__body {
 	z-index: 0;
 	position: absolute;
 
@@ -81,9 +81,10 @@
 
 .modal__morgana.neutral > .morgana__mouth > .mouth {
 	transform: translate(-565px, -1px);
-	animation: neutralTalk 500ms infinite steps(1);
 }
-
+.modal__morgana.neutral > .morgana__mouth > .mouth:hover {
+	animation: neutralTalk 500ms 10 steps(1);
+}
 @keyframes neutralTalk {
 	0%,
 	30% {
@@ -134,4 +135,40 @@
 }
 .body__sad {
 	transform: translate(-86px, -1380px);
+}
+
+/* morgana happy */
+.modal__morgana.happy > .morgana__body > .body {
+	transform: translate(-86px, -315px);
+}
+.modal__morgana.happy > .morgana__eyes {
+	display: none;
+}
+.modal__morgana.happy > .morgana__mouth {
+	position: absolute;
+	width: 130px;
+	height: 70px;
+	z-index: 2;
+	overflow: hidden;
+	bottom: 22.5%;
+	left: 14%;
+}
+.modal__morgana.happy > .morgana__mouth > .mouth {
+	transform: translate(-274px, -271px);
+
+	animation: happyTalk 500ms infinite steps(1);
+}
+@keyframes happyTalk {
+	0%,
+	30% {
+		transform: translate(-274px, -271px);
+	}
+	31%,
+	60% {
+		transform: translate(-412px, -271px);
+	}
+	61%,
+	100% {
+		transform: translate(-550px, -271px);
+	}
 }
