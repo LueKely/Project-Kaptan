@@ -23,7 +23,6 @@
 
 /* morgana in neutral*/
 .modal__morgana {
-	margin: 200px;
 	position: relative;
 	background-color: brown;
 	width: 200px;
@@ -63,7 +62,7 @@
 }
 .modal__morgana.neutral > .morgana__eyes > .eye {
 	transform: translate(-411px, -30px);
-	animation: neutralBlink 3s infinite steps(1);
+	animation: neutralBlink 5s infinite steps(1);
 }
 /* morgana__mouth */
 .modal__morgana.neutral > .morgana__mouth {
@@ -81,10 +80,9 @@
 
 .modal__morgana.neutral > .morgana__mouth > .mouth {
 	transform: translate(-565px, -1px);
+	animation: neutralTalk 500ms infinite steps(1);
 }
-.modal__morgana.neutral > .morgana__mouth > .mouth:hover {
-	animation: neutralTalk 500ms 10 steps(1);
-}
+
 @keyframes neutralTalk {
 	0%,
 	30% {
@@ -170,5 +168,76 @@
 	61%,
 	100% {
 		transform: translate(-550px, -271px);
+	}
+}
+
+/* morgana mad */
+.modal__morgana.mad > .morgana__body > .body {
+	transform: translate(-86px, -581.5px);
+}
+.modal__morgana.mad > .morgana__eyes {
+	z-index: 1;
+	overflow: hidden;
+	width: 130px;
+	height: 120px;
+	position: absolute;
+	/* bottom: 44.2%; */
+	bottom: 44.45%;
+	/* left: 8.89%; */
+	left: 8.8%;
+}
+.modal__morgana.mad > .morgana__eyes > .eye {
+	/* display: none; */
+	/* transform: translate(-411.5px, -550.4px); */
+	transform: translate(-411.5px, -549.8px);
+	/* transform: translate(-273.7px, -549.8px); */
+	animation: madBlink 5s infinite steps(1);
+}
+.modal__morgana.mad > .morgana__mouth {
+	z-index: 12;
+	width: 115px;
+	height: 40px;
+	position: absolute;
+	overflow: hidden;
+	bottom: 29.5%;
+	left: 16%;
+}
+.modal__morgana.mad > .morgana__mouth > .mouth {
+	transform: translate(-564.9px, -534px);
+	transform: translate(-703px, -534px);
+	transform: translate(-841px, -534px);
+	animation: madTalk 500ms infinite steps(1);
+}
+@keyframes madBlink {
+	0%,
+	70% {
+		opacity: 0%;
+	}
+	71% {
+		opacity: 100%;
+		transform: translate(-273.7px, -549.8px);
+	}
+
+	75% {
+		opacity: 100%;
+		transform: translate(-411.5px, -549.8px);
+	}
+	76%,
+	100% {
+		opacity: 0%;
+	}
+}
+@keyframes madTalk {
+	0%,
+	30% {
+		transform: translate(-564.9px, -534px);
+	}
+	31%,
+	60% {
+		transform: translate(-703px, -534px);
+	}
+	61%,
+	100% {
+		transform: translate(-841px, -534px);
 	}
 }
