@@ -323,3 +323,36 @@
 	width: 300px;
 	height: 100px;
 }
+
+.name__box {
+	z-index: 2;
+	margin: auto;
+	width: 200px;
+	height: 60px;
+	background-color: white;
+	transform: perspective(260px) rotateX(15deg) rotateY(-30deg) rotateZ(360deg)
+		skewX(-20deg);
+}
+.name__box-shadow {
+	z-index: 3;
+	margin: auto;
+	width: 210px;
+	height: 70px;
+	background-color: black;
+	transform: perspective(260px) rotateX(15deg) rotateY(-30deg) rotateZ(360deg)
+		skewX(-20deg);
+}
+.text__triangle {
+	z-index: 2;
+	width: 30px;
+	height: 70px;
+	background: white;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.text__triangle-shadow {
+	z-index: 1;
+	width: 40px;
+	height: 80px;
+	background: black;
+	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
