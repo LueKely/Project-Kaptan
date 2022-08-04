@@ -319,40 +319,120 @@
 
 /* white text box */
 .dialogue__name-container {
+	position: relative;
+	margin: auto;
 	background-color: darkgray;
 	width: 300px;
-	height: 100px;
+	height: 150px;
 }
-
+.dialogue__name-container > div {
+	position: absolute;
+}
 .name__box {
 	z-index: 2;
 	margin: auto;
-	width: 200px;
-	height: 60px;
+	width: 175px;
+	height: 50px;
 	background-color: white;
-	transform: perspective(260px) rotateX(15deg) rotateY(-30deg) rotateZ(360deg)
-		skewX(-20deg);
+	transform: perspective(180px) rotateX(15deg) rotateY(-20deg) rotateZ(360deg)
+		skewX(-15deg);
+
+	left: 22%;
+	bottom: 40%;
+
+	animation: boxMove 300ms ease-in-out 0s infinite alternate;
 }
 .name__box-shadow {
-	z-index: 3;
-	margin: auto;
-	width: 210px;
-	height: 70px;
-	background-color: black;
-	transform: perspective(260px) rotateX(15deg) rotateY(-30deg) rotateZ(360deg)
-		skewX(-20deg);
-}
-.text__triangle {
-	z-index: 2;
-	width: 30px;
-	height: 70px;
-	background: white;
-	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-}
-.text__triangle-shadow {
 	z-index: 1;
-	width: 40px;
-	height: 80px;
-	background: black;
-	clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+	margin: auto;
+	width: 185px;
+	height: 65px;
+	background-color: black;
+	transform: perspective(180px) rotateX(15deg) rotateY(-20deg) rotateZ(360deg)
+		skewX(-15deg);
+	left: 20%;
+	bottom: 36%;
+	animation: boxMove-shadow 300ms ease-in-out 0s infinite alternate;
+}
+.name__triangle {
+	z-index: 2;
+	border-left: 12px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 90px solid white;
+	border-top: 10px solid transparent;
+	display: inline-block;
+
+	/* clip-path: polygon(50% 0%, -1% 100%, 100% 100%); */
+
+	transform: rotate(-90deg);
+	left: 15%;
+	bottom: 8%;
+	animation: triangle 300ms ease-in-out 0s infinite alternate;
+	outline: none;
+}
+
+.name__triangle-shadow {
+	z-index: 1;
+	border-left: 18px solid transparent;
+	border-right: 27px solid transparent;
+	border-bottom: 120px solid black;
+	border-top: 10px solid transparent;
+	display: inline-block;
+	/* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+	transform: rotate(-90deg);
+	left: 10%;
+	bottom: -2%;
+	animation: triangle-black 300ms ease-in-out 0s infinite alternate;
+}
+
+/* morgana text */
+.name__text {
+	z-index: 4;
+	position: absolute;
+	left: 39%;
+	bottom: 45%;
+	font-family: 'p5hatty';
+	font-size: 2rem;
+}
+.r {
+	color: white;
+	background-color: black;
+}
+@keyframes boxMove {
+	0% {
+		transform: perspective(180px) rotateX(15deg) rotateY(-10deg) rotateZ(360deg)
+			skewX(-20deg);
+	}
+
+	100% {
+		transform: perspective(150px) rotateX(15deg) rotateY(-15deg) rotateZ(360deg)
+			skewX(45deg);
+	}
+}
+@keyframes boxMove-shadow {
+	0% {
+		transform: perspective(180px) rotateX(15deg) rotateY(-10deg) rotateZ(360deg)
+			skewX(-20deg);
+	}
+
+	100% {
+		transform: perspective(180px) rotateX(15deg) rotateY(-15deg) rotateZ(360deg)
+			skewX(45deg);
+	}
+}
+@keyframes triangle {
+	from {
+		transform: rotate(-90deg) skewY(20deg);
+	}
+	to {
+		-moz-transform: rotate(-90deg) skewY(-20deg);
+	}
+}
+@keyframes triangle-black {
+	from {
+		transform: rotate(-90deg) skewY(25deg);
+	}
+	to {
+		-moz-transform: rotate(-90deg) skewY(-25deg);
+	}
 }
