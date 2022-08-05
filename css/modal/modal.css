@@ -454,7 +454,7 @@
 	clip-path: polygon(3% 10%, 95% 0%, 100% 91%, 0% 70%);
 	left: 14%;
 	bottom: 10%;
-	animation: tb1 300ms ease-in-out 0s infinite alternate;
+	/* animation: tb1 300ms ease-in-out 0s infinite alternate; */
 }
 .text__box-shadow {
 	position: absolute;
@@ -466,7 +466,7 @@
 	clip-path: polygon(3% 10%, 95% 0%, 100% 91%, 0% 70%);
 	left: 13.5%;
 	bottom: 5%;
-	animation: tb1 300ms ease-in-out 0s infinite alternate;
+	/* animation: tb1 300ms ease-in-out 0s infinite alternate; */
 }
 .text__box-shadow-2nd {
 	position: absolute;
@@ -478,7 +478,7 @@
 	clip-path: polygon(3% 10%, 95% 0%, 100% 91%, 0% 70%);
 	left: 13%;
 	bottom: 2%;
-	animation: tb1 500ms ease-in-out 0s infinite alternate;
+	/* animation: tb1 500ms ease-in-out 0s infinite alternate; */
 }
 
 @keyframes tb1 {
@@ -489,4 +489,57 @@
 	to {
 		clip-path: polygon(3.5% 10%, 94.5% 0%, 99.5% 91%, 1% 69%);
 	}
+}
+
+.text__triangle {
+	border-left: 16px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 100px solid black;
+	border-top: 0px solid transparent;
+	width: 20px;
+	transform: rotate(-60deg) skewY(30deg);
+	position: absolute;
+
+	z-index: 3;
+	left: 12%;
+	bottom: 19%;
+}
+.text__triangle-shadow {
+	border-left: 20px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 60px solid white;
+	width: 110px;
+	position: absolute;
+	left: 6%;
+	bottom: 26%;
+	z-index: 2;
+	transform: rotate(30deg);
+}
+.text__triangle-shadow-2 {
+	border-left: 20px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 60px solid black;
+	width: 110px;
+	position: absolute;
+	left: 6.2%;
+	bottom: 26%;
+	z-index: 1;
+	transform: rotate(30deg) scale(1.13, 1.3);
+}
+.text__trapezoid {
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 42px solid black;
+	width: 15px;
+	z-index: 3;
+	position: absolute;
+	left: 8.8%;
+	bottom: 33.1%;
+	transform: rotate(28deg);
+	/* left: 8%;
+	bottom: 35%;
+	transform: rotate(16deg); */
 }
