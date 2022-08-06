@@ -536,10 +536,24 @@
 	width: 15px;
 	z-index: 3;
 	position: absolute;
+	/* left: 8.8%;
+	bottom: 33.1%; */
 	left: 8.8%;
-	bottom: 33.1%;
-	transform: rotate(28deg);
+	bottom: 33.03%;
+	transform: rotate(25deg);
 	/* left: 8%;
 	bottom: 35%;
 	transform: rotate(16deg); */
+}
+.text__small-triangle {
+	border-left: 6px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 50px solid black;
+	border-top: 0px solid transparent;
+	z-index: 3;
+	display: inline-block;
+	position: absolute;
+	bottom: 29%;
+	left: 8.07%;
+	transform: rotate(-61deg);
 }
