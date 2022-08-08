@@ -38,6 +38,10 @@
 	font-family: 'fgm';
 	src: url(../Fonts/Franklin\ Gothic\ Medium\ Regular.ttf);
 }
+@font-face {
+	font-family: 'Optima Nova Black';
+	src: url('../Fonts/optima-nova-lt-black.otf');
+}
 :root {
 	--red-color: #ff0505;
 	--bg-color: #d84141;

@@ -19,17 +19,17 @@
 	width: 100vw;
 	height: 100vh;
 	background-color: blanchedalmond;
+	overflow: hidden;
 }
 
 /* morgana in neutral*/
 .morgana {
 	width: 200px;
 	height: 230px;
-	transform: scale(1);
 }
 .modal__morgana {
 	position: relative;
-	background-color: brown;
+
 	width: 200px;
 	height: 230px;
 }
@@ -204,7 +204,7 @@
 	height: 40px;
 	position: absolute;
 	overflow: hidden;
-	bottom: 29.5%;
+	bottom: 30%;
 	left: 16%;
 }
 .modal__morgana.mad > .morgana__mouth > .mouth {
@@ -321,7 +321,7 @@
 .dialogue__name-container {
 	position: relative;
 	margin: auto;
-	background-color: darkgray;
+
 	width: 300px;
 	height: 150px;
 }
@@ -387,6 +387,7 @@
 
 /* morgana text */
 .name__text {
+	transform: scaleY(1.2);
 	z-index: 4;
 	position: absolute;
 	left: 39%;
@@ -443,7 +444,6 @@
 	margin: auto;
 	width: 1120px;
 	height: 300px;
-	background-color: brown;
 }
 .text__box {
 	position: absolute;
@@ -646,4 +646,36 @@
 	to {
 		transform: rotate(-55deg) skewY(-10deg) scaleY(0.9);
 	}
+}
+
+.text__text {
+	font-family: 'Optima Nova Black';
+	color: white;
+	width: 750px;
+	font-size: 1.4rem;
+	position: absolute;
+	left: 22%;
+	bottom: 40%;
+	z-index: 5;
+}
+
+/* modal placement */
+.morgana {
+	transform: scale(1.2);
+	position: absolute;
+	bottom: -12%;
+	left: 1%;
+}
+
+.dialogue__text {
+	position: absolute;
+	bottom: -15%;
+	left: 11%;
+}
+.dialogue__name {
+	z-index: 5;
+	position: absolute;
+	bottom: 5%;
+	left: 15%;
+	transform: rotate(-18deg) scaleY(0.8);
 }
