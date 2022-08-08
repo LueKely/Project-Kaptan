@@ -340,19 +340,19 @@
 	left: 22%;
 	bottom: 40%;
 
-	animation: boxMove 300ms ease-in-out 0s infinite alternate;
+	animation: boxMove 350ms ease-in-out 0s infinite alternate;
 }
 .name__box-shadow {
 	z-index: 1;
 	margin: auto;
-	width: 185px;
+	width: 188px;
 	height: 65px;
 	background-color: black;
 	transform: perspective(180px) rotateX(15deg) rotateY(-20deg) rotateZ(360deg)
 		skewX(-15deg);
 	left: 20%;
 	bottom: 36%;
-	animation: boxMove-shadow 300ms ease-in-out 0s infinite alternate;
+	animation: boxMove-shadow 350ms ease-in-out 0s infinite alternate;
 }
 .name__triangle {
 	z-index: 2;
@@ -402,39 +402,39 @@
 @keyframes boxMove {
 	0% {
 		transform: perspective(180px) rotateX(15deg) rotateY(-10deg) rotateZ(360deg)
-			skewX(-20deg);
+			skewX(-20deg) scale(0.9, 1);
 	}
 
 	100% {
-		transform: perspective(150px) rotateX(15deg) rotateY(-15deg) rotateZ(360deg)
-			skewX(5deg);
+		transform: perspective(150px) rotateX(15deg) rotateY(-12deg) rotateZ(360deg)
+			skewX(-15deg) scale(1, 0.9);
 	}
 }
 @keyframes boxMove-shadow {
 	0% {
 		transform: perspective(180px) rotateX(15deg) rotateY(-10deg) rotateZ(360deg)
-			skewX(-25deg);
+			skewX(-25deg) scale(0.9, 1);
 	}
 
 	100% {
-		transform: perspective(180px) rotateX(15deg) rotateY(-15deg) rotateZ(360deg)
-			skewX(10deg);
+		transform: perspective(180px) rotateX(15deg) rotateY(-11deg) rotateZ(360deg)
+			skewX(-20deg) scale(1, 0.9);
 	}
 }
 @keyframes triangle {
 	from {
-		transform: rotate(-90deg) skewY(20deg);
+		transform: rotate(-90deg) skewY(20deg) scale(1, 1.1);
 	}
 	to {
-		-moz-transform: rotate(-90deg) skewY(-20deg);
+		-moz-transform: rotate(-85deg) skewY(-20deg) scale(1.1, 1);
 	}
 }
 @keyframes triangle-black {
 	from {
-		transform: rotate(-90deg) skewY(25deg);
+		transform: rotate(-90deg) skewY(25deg) scale(1, 1.1);
 	}
 	to {
-		-moz-transform: rotate(-90deg) skewY(-25deg);
+		-moz-transform: rotate(-85deg) skewY(-25deg) scale(1.1, 1);
 	}
 }
 
@@ -490,7 +490,7 @@
 		clip-path: polygon(3.5% 10%, 94.5% 0%, 99.5% 91%, 1% 69%);
 	}
 }
-
+/* 12 */
 .text__triangle {
 	border-left: 16px solid transparent;
 	border-right: 10px solid transparent;
@@ -511,7 +511,7 @@
 		transform: rotate(-60deg) skewY(30deg) skewX(0deg);
 	}
 	to {
-		transform: rotate(-60deg) skewY(25deg) skewX(-6deg);
+		transform: rotate(-60deg) skewY(25deg) skewX(-5.5deg);
 	}
 }
 
@@ -549,7 +549,7 @@
 		transform: rotate(38deg) skew(-5deg) scale(0.95);
 	}
 }
-
+/* 123 */
 .text__trapezoid {
 	border-left: 12px solid transparent;
 	border-right: 12px solid transparent;
@@ -561,7 +561,7 @@
 	/* left: 8.8%;
 	bottom: 33.1%; */
 	left: 8.8%;
-	bottom: 33.75%;
+	bottom: 33.76%;
 	transform: rotate(30deg);
 	/* left: 8%;
 	bottom: 35%;
@@ -579,7 +579,7 @@
 		border-left: 12px solid transparent;
 		border-right: 12px solid transparent;
 		border-bottom: 0px solid transparent;
-		border-top: 46px solid black;
+		border-top: 46.2px solid black;
 	}
 }
 .text__small-triangle {
@@ -590,18 +590,18 @@
 	z-index: 3;
 	display: inline-block;
 	position: absolute;
-	bottom: 29%;
-	left: 7.8%;
+	bottom: 30%;
+	left: 7.9%;
 	transform: rotate(-61deg);
 	animation: tst 200ms ease-in-out 0s infinite alternate;
 }
 
 @keyframes tst {
 	from {
-		transform: rotate(-61deg) skewY(-15deg);
+		transform: rotate(-61deg);
 	}
 	to {
-		transform: rotate(-55deg) skewY(-10deg);
+		transform: rotate(-55deg);
 	}
 }
 
@@ -652,16 +652,16 @@
 	font-family: 'Optima Nova Black';
 	color: white;
 	width: 750px;
-	font-size: 1.4rem;
+	font-size: 1rem;
 	position: absolute;
 	left: 22%;
-	bottom: 40%;
+	bottom: 39%;
 	z-index: 5;
 }
 
 /* modal placement */
 .morgana {
-	transform: scale(1.2);
+	transform: scale(1);
 	position: absolute;
 	bottom: -12%;
 	left: 1%;
@@ -669,13 +669,24 @@
 
 .dialogue__text {
 	position: absolute;
-	bottom: -15%;
-	left: 11%;
+	bottom: 0%;
+	left: 0%;
 }
 .dialogue__name {
 	z-index: 5;
 	position: absolute;
-	bottom: 5%;
-	left: 15%;
+	bottom: 38%;
+	left: 4%;
 	transform: rotate(-18deg) scaleY(0.8);
+}
+.dialogue--container {
+	position: relative;
+	width: 1100px;
+	height: 350px;
+}
+
+.dialogueBox {
+	position: absolute;
+	left: 10%;
+	bottom: -20%;
 }
