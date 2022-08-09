@@ -669,6 +669,12 @@
 
 	width: 650px;
 	height: 130px;
+	cursor: pointer;
+}
+.click {
+	z-index: 10;
+	width: 600px;
+	height: 120px;
 }
 .choices--container > div {
 	position: absolute;
@@ -678,7 +684,7 @@
 	margin: auto;
 	width: 400px;
 	height: 55px;
-	background-color: white;
+	background-color: black;
 	transform: perspective(180px) rotateX(0deg) rotateY(10deg) rotateZ(360deg)
 		skewX(-15deg);
 	bottom: 40%;
@@ -689,7 +695,7 @@
 	z-index: 2;
 	border-left: 20px solid transparent;
 	border-right: 27px solid transparent;
-	border-bottom: 120px solid white;
+	border-bottom: 120px solid black;
 	border-top: 0px solid transparent;
 	display: inline-block;
 
@@ -704,7 +710,7 @@
 	z-index: 1;
 	border-left: 30px solid transparent;
 	border-right: 35px solid transparent;
-	border-bottom: 145px solid black;
+	border-bottom: 145px solid white;
 	border-top: 0px solid transparent;
 	display: inline-block;
 
@@ -723,7 +729,7 @@
 	margin: auto;
 	width: 420px;
 	height: 70px;
-	background-color: black;
+	background-color: white;
 	transform: perspective(180px) rotateX(0deg) rotateY(10deg) rotateZ(360deg)
 		skewX(-15deg);
 	animation: choices-animate 400ms ease-in-out 0s infinite alternate;
@@ -731,7 +737,7 @@
 .choices__text {
 	font-family: 'Optima Nova Black';
 	width: 300px;
-	color: black;
+	color: white;
 	font-size: 1.5rem;
 	z-index: 3;
 	left: 35%;
@@ -839,4 +845,20 @@
 	position: absolute;
 	bottom: 30%;
 	left: 20%;
+}
+
+.choices--container.focused > .choices__shadow-box {
+	background-color: black;
+}
+.choices--container.focused > .choices__text {
+	color: black;
+}
+.choices--container.focused > .choices__box {
+	background-color: white;
+}
+.choices--container.focused > .choices__shadow-triangle {
+	border-bottom: 145px solid black;
+}
+.choices--container.focused > .choices__triangle {
+	border-bottom: 120px solid white;
 }
