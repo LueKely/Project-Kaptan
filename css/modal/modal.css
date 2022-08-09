@@ -734,7 +734,7 @@
 	color: black;
 	font-size: 1.5rem;
 	z-index: 3;
-	left: 40%;
+	left: 35%;
 	bottom: 50%;
 }
 /* modal placement */
@@ -807,27 +807,33 @@
 .choices > .choices-holder:nth-child(1) {
 	bottom: 65%;
 	transform: rotate(15deg);
+	transition: transform 100ms ease-in-out;
 }
 .choices > .choices-holder:nth-child(2) {
 	bottom: 35%;
 	transform: rotate(0deg);
+	transition: transform 100ms ease-in-out;
 }
 
 .choices > .choices-holder:nth-child(3) {
 	bottom: 5%;
 	transform: rotate(-15deg);
+	transition: transform 100ms ease-in-out;
 }
 .choices > .choices-holder:nth-child(1):hover {
 	bottom: 65%;
 	transform: rotate(15deg) scale(1.2);
+	transition: transform 100ms ease-in-out;
 }
 .choices > .choices-holder:nth-child(2):hover {
 	bottom: 35%;
 	transform: rotate(0deg) scale(1.2);
+	transition: transform 100ms ease-in-out;
 }
 .choices > .choices-holder:nth-child(3):hover {
 	bottom: 5%;
 	transform: rotate(-15deg) scale(1.2);
+	transition: transform 100ms ease-in-out;
 }
 .mc--choices {
 	position: absolute;
