@@ -16,7 +16,6 @@ choiceBox.forEach((box) => {
 
 choiceBox[0].addEventListener('click', () => {
 	textBoxText.style.fontSize = '1.5rem';
-	text.textContent = speak;
 
 	morganaClassChange('happy', 'mad', 'neutral');
 	morgana.classList.add('neutral');
