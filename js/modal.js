@@ -4,10 +4,26 @@ const text = document.querySelector('.text');
 const morgana = document.querySelector('.modal__morgana');
 const funny = new Audio('../audio/funny.mp3');
 const textBoxText = document.querySelector('.text__text');
+const xbtn = document.querySelector('.screen');
+const x = document.querySelector('.xbtn__black');
+const x2 = document.querySelector('.xbtn__black1');
+
+xbtn.addEventListener('mouseover', () => {
+	x.classList.add('focused');
+	x2.classList.add('focused');
+});
+
+xbtn.addEventListener('mouseout', () => {
+	x.classList.remove('focused');
+	x2.classList.remove('focused');
+});
+xbtn.addEventListener('click', () => {
+	alert('test');
+});
 
 choiceBox.forEach((box) => {
 	box.addEventListener('mouseover', (e) => {
-		e.target.parentElement.classList.toggle('focused');
+		e.target.parentElement.classList.add('focused');
 	});
 	box.addEventListener('mouseout', (e) => {
 		e.target.parentElement.classList.remove('focused');
@@ -16,7 +32,7 @@ choiceBox.forEach((box) => {
 
 choiceBox[0].addEventListener('click', () => {
 	textBoxText.style.fontSize = '1.5rem';
-
+	text.textContent = 'test';
 	morganaClassChange('happy', 'mad', 'neutral');
 	morgana.classList.add('neutral');
 });

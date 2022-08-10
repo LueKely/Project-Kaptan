@@ -880,3 +880,109 @@
 .choices--container.focused > .choices__triangle {
 	border-bottom: 120px solid white;
 }
+
+/* x btn */
+.xbtn {
+	position: absolute;
+	left: 90%;
+}
+.xbtn--container {
+	position: relative;
+	width: 70px;
+	height: 70px;
+
+	margin-left: 50px;
+}
+.screen {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	z-index: 10;
+}
+.xbtn--container > div {
+	position: absolute;
+}
+.xbtn__black {
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 50px solid black;
+	left: 40%;
+	bottom: 10%;
+	width: 10px;
+	transform: skewX(-39deg) rotate(5deg);
+	z-index: 2;
+	transition: border ease-in-out 200ms;
+	animation: x 300ms ease-in-out 0s infinite alternate;
+}
+.xbtn__black1 {
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 50px solid black;
+	left: 40%;
+	bottom: 10%;
+	width: 10px;
+	transform: skewX(39deg) rotate(-5deg);
+	z-index: 2;
+	transition: border ease-in-out 200ms;
+	animation: x2 350ms ease-in-out 0s infinite alternate;
+}
+.xbtn__black.focused {
+	transition: border ease-in-out 200ms;
+	border-top: 50px solid red;
+}
+
+.xbtn__black1.focused {
+	transition: border ease-in-out 200ms;
+	border-top: 50px solid red;
+}
+.xbtn__shadow {
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 60px solid white;
+	left: 33%;
+	bottom: 3%;
+	width: 20px;
+	transform: skewX(-39deg) rotate(5deg);
+	z-index: 1;
+	animation: x 300ms ease-in-out 0s infinite alternate;
+}
+
+.xbtn__shadow2 {
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 60px solid white;
+	left: 33%;
+	bottom: 3%;
+	width: 20px;
+	transform: skewX(39deg) rotate(-5deg);
+	z-index: 1;
+	animation: x2 350ms ease-in-out 0s infinite alternate;
+}
+@keyframes x2 {
+	from {
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		transform: skewX(39deg) rotate(-5deg) scaleY(1);
+	}
+	to {
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		transform: skewX(34deg) rotate(-12deg) scaleY(0.9);
+	}
+}
+@keyframes x {
+	from {
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		transform: skewX(-39deg) rotate(5deg) scaleY(1);
+	}
+	to {
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		transform: skewX(-34deg) rotate(20deg) scaleY(0.9);
+	}
+}
