@@ -1,4 +1,5 @@
 const dayTime = document.querySelector('.time1');
+
 const currentTime = document.querySelector('.time__currently');
 const amPm = document.getElementById('am-pm');
 const time1 = document.querySelector('.time1');

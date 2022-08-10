@@ -94,6 +94,15 @@ function getCurrTemp(index) {
 	});
 }
 
+const morgana_speak = {
+	rainy:
+		"I hope you brought an umbrella joker, it's gonna be a wet one. A storm is a brewin'.",
+	sunny:
+		" Wooh~ it's so hot, let's go drop by the closes convinient store and grab us something cool to drink.",
+	cloudy:
+		"Hmmphh.. it's pretty cloudy today am i right joker? Did you know? Clouds can go up to 60,000 feet (18288 m) high in the sky. ",
+};
+
 //tells what class to add to the img
 function showForecast(input, index) {
 	if (input == 3 || input == 0) {

@@ -20,7 +20,10 @@
 	width: 1350px;
 	height: 900px;
 	margin: auto;
-	background-color: blanchedalmond;
+	background: url('/Images/background/bgi.png');
+	background-color: black;
+	background-position: center;
+	background-size: cover;
 	overflow: hidden;
 }
 
@@ -654,7 +657,7 @@
 	font-family: 'Optima Nova Black';
 	color: white;
 	width: 750px;
-	font-size: 1rem;
+	font-size: 1.5rem;
 	position: absolute;
 	left: 22%;
 	bottom: 39%;
@@ -749,6 +752,19 @@
 	position: absolute;
 	bottom: 0%;
 	left: 2%;
+	animation: morgana-moves 200ms ease;
+}
+
+@keyframes morgana-moves {
+	from {
+		opacity: 0%;
+		transform: translate(-20px);
+	}
+	to {
+		transform: translate(0px);
+
+		opacity: 100%;
+	}
 }
 
 .dialogue__text {
@@ -773,12 +789,13 @@
 	position: absolute;
 	left: 13%;
 	bottom: -2%;
+	animation: morgana-moves 800ms ease;
 }
 
 .modal--mc {
 	position: absolute;
 	left: 60%;
-	bottom: 10%;
+	bottom: 0%;
 }
 
 @keyframes choices-animate {
@@ -837,11 +854,12 @@
 	transition: transform 100ms ease-in-out;
 }
 .choices > .choices-holder:nth-child(3):hover {
-	bottom: 5%;
+	bottom: 4%;
 	transform: rotate(-15deg) scale(1.2);
 	transition: transform 100ms ease-in-out;
 }
 .mc--choices {
+	transform: rotate(10deg);
 	position: absolute;
 	bottom: 30%;
 	left: 20%;
