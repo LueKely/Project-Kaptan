@@ -32,7 +32,7 @@ const allDays = fetch('./json/weathertemp.json').then((response) => {
 	});
 });
 // gets the html day from the json
-const lue = fetch('./json/weathertemp.json').then((response) => {
+const getDayJson = fetch('./json/weathertemp.json').then((response) => {
 	response.json().then((result) => {
 		if (date.getDay() == 1) {
 			todayDate[0].classList.add('monday');

@@ -1,6 +1,7 @@
 # todo list
 
 - adjust minor graphical thingymabobs
+- to be specific the smaller screen, i think it be best to just make the assets be tinier
 - clean up the js script
 - make a readMe.md
 
