@@ -25,7 +25,9 @@
 	width: 1350px;
 	height: 900px;
 	margin: auto;
-	background: url('/Images/background/bgi.png');
+
+	background: url('https://raw.githubusercontent.com/LueKely/Project-Kaptan/Final/Images/background/bgi.png');
+
 	background-color: black;
 	background-position: center;
 	background-size: cover;
