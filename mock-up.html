@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="./css/loadingscreen.css" />
 		<link rel="stylesheet" href="./css/todayweather.css" />
 		<link rel="stylesheet" href="./css/followingdays.css" />
+		<link rel="stylesheet" href="./css/modal/modal.css" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -44,6 +45,159 @@
 				<p id="am-pm"></p>
 			</div>
 		</div>
+
+		<div class="modal-btn">
+			<img
+				src="./Images/sprites/Profile pictures.png"
+				alt=""
+				srcset=""
+				class="modal-btn__img"
+			/>
+		</div>
+
+		<dialog class="modal--container animate__animated">
+			<div class="morgana">
+				<div class="modal__morgana neutral">
+					<div class="morgana__body">
+						<img
+							src="./Images/sprites/morgana.png"
+							class="body"
+							alt=""
+							srcset=""
+						/>
+					</div>
+
+					<div class="morgana__eyes">
+						<img src="./Images/sprites/morgana.png" alt="" class="eye" />
+					</div>
+
+					<div class="morgana__mouth">
+						<img
+							src="./Images/sprites/morgana.png"
+							alt=""
+							srcset=""
+							class="mouth"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal--mc">
+				<div class="mc">
+					<div class="mc__head">
+						<img
+							src="./Images/sprites/MC.png"
+							alt=""
+							srcset=""
+							class="head-img"
+						/>
+					</div>
+					<div class="mc__eyes">
+						<img
+							src="./Images/sprites/MC.png"
+							alt=""
+							srcset=""
+							class="eyes-img"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<!-- text box for morgana -->
+
+			<div class="dialogueBox">
+				<div class="dialogue--container">
+					<!-- white textbox name -->
+					<div class="dialogue__name">
+						<div class="dialogue__name-container">
+							<div class="name__box"></div>
+							<div class="name__box-shadow"></div>
+							<div class="name__triangle"></div>
+							<div class="name__triangle-shadow"></div>
+							<div class="name__text">
+								<p>Mo<span class="r">r</span>gana</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- black textbox -->
+					<div class="dialogue__text">
+						<div class="dialogue__text-container">
+							<div class="text__box"></div>
+							<div class="text__box-shadow"></div>
+							<div class="text__box-shadow-2nd"></div>
+
+							<div class="text__triangle"></div>
+							<div class="text__triangle-shadow"></div>
+							<div class="text__triangle-shadow-2"></div>
+
+							<div class="text__trapezoid"></div>
+							<div class="text__trapezoid-shadow"></div>
+
+							<div class="text__small-triangle"></div>
+							<div class="text__small-triangle-white"></div>
+							<div class="text__small-triangle-black"></div>
+							<div class="text__text">
+								<p class="text"></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- choices of mc -->
+			</div>
+			<div class="mc--choices">
+				<div class="choices">
+					<div class="choices-holder">
+						<div class="choices--container">
+							<div class="click"></div>
+							<div class="choices__box"></div>
+							<div class="choices__triangle"></div>
+							<div class="choices__shadow-box"></div>
+							<div class="choices__shadow-triangle"></div>
+							<div class="choices__text">
+								<p>How's the weather?</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="choices-holder">
+						<div class="choices--container">
+							<div class="click"></div>
+							<div class="choices__box"></div>
+							<div class="choices__triangle"></div>
+							<div class="choices__shadow-box"></div>
+							<div class="choices__shadow-triangle"></div>
+							<div class="choices__text">
+								<p>What is this?</p>
+							</div>
+						</div>
+					</div>
+					<div class="choices-holder">
+						<div class="choices--container">
+							<div class="click"></div>
+							<div class="choices__box"></div>
+							<div class="choices__triangle"></div>
+							<div class="choices__shadow-box"></div>
+							<div class="choices__shadow-triangle"></div>
+							<div class="choices__text">
+								<p>krazy rapid boots?</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- x button kek fuck this all for my ego i should have used font awesome BUT NOOOOOOOOO smol brain thinks it doesnt fit the persona 5 vibe then fuck your vibe -->
+			<div class="xbtn">
+				<div class="xbtn--container">
+					<div class="screen"></div>
+					<div class="xbtn__black"></div>
+					<div class="xbtn__black1"></div>
+					<div class="xbtn__shadow"></div>
+					<div class="xbtn__shadow2"></div>
+				</div>
+			</div>
+		</dialog>
 		<!-- current day -->
 		<div class="todayweather--container">
 			<div class="todayweather--item">
@@ -282,8 +436,10 @@
 				</div>
 			</div>
 		</div>
+		<a href="" target="_blank"></a>
 
 		<script src="./js/time.js"></script>
 		<script src="./js/weather.js"></script>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>

@@ -7,6 +7,24 @@ const textBoxText = document.querySelector('.text__text');
 const xbtn = document.querySelector('.screen');
 const x = document.querySelector('.xbtn__black');
 const x2 = document.querySelector('.xbtn__black1');
+const modalBtn = document.querySelector('.modal-btn__img');
+const modal = document.querySelector('.modal--container');
+
+modalBtn.addEventListener('click', () => {
+	modal.showModal();
+});
+xbtn.addEventListener('click', () => {
+	modal.classList.add('animate__zoomOut');
+	setTimeout(() => {
+		modal.close();
+		modal.classList.remove('animate__zoomOut');
+	}, 250);
+	text.textContent =
+		'Thank you for visiting the Persona 5 themed Weather app, I hope you enjoyed using it as well as I did.';
+	textBoxText.style.fontSize = '1.5rem';
+	morganaClassChange('neutral', 'mad', 'happy');
+	morgana.classList.add('happy');
+});
 
 xbtn.addEventListener('mouseover', () => {
 	x.classList.add('focused');
@@ -16,9 +34,6 @@ xbtn.addEventListener('mouseover', () => {
 xbtn.addEventListener('mouseout', () => {
 	x.classList.remove('focused');
 	x2.classList.remove('focused');
-});
-xbtn.addEventListener('click', () => {
-	alert('test');
 });
 
 choiceBox.forEach((box) => {
@@ -30,20 +45,22 @@ choiceBox.forEach((box) => {
 	});
 });
 
+text.textContent =
+	'Thank you for visiting the Persona 5 themed Weather app, I hope you enjoyed using it as well as I did.';
+
 choiceBox[0].addEventListener('click', () => {
 	textBoxText.style.fontSize = '1.5rem';
-	text.textContent = 'test';
+	text.textContent = speak;
 	morganaClassChange('happy', 'mad', 'neutral');
 	morgana.classList.add('neutral');
 });
 
 choiceBox[1].addEventListener('click', () => {
 	textBoxText.style.fontSize = '1.5rem';
-	text.textContent =
-		'This is a litle project made by some loser who had 2 months to spare and has little to no social interaction. ';
+	text.innerHTML =
+		'This is a litle project made by some loser who had a month to spare and has little to no social interactions.&nbsp;<a href="https://github.com/LueKely/Project-Kaptan" target="_blank"> Here\'s the repo link</a> ';
 
 	morganaClassChange('neutral', 'mad', 'happy');
-
 	morgana.classList.add('happy');
 });
 choiceBox[2].addEventListener('click', () => {

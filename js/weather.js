@@ -59,7 +59,8 @@ async function currentWeather() {
 //demonstration
 currentWeather().then((results) => {
 	console.log('The current weather is:');
-	console.log(results);
+	console.log(results.weathercode);
+	morganaSpeaks(results.weathercode);
 	results.result().then((joe) => {
 		console.log(joe);
 	});
@@ -98,12 +99,12 @@ const morgana_speak = {
 	rainy:
 		"I hope you brought an umbrella joker, it's gonna be a wet one. A storm is a brewin'.",
 	sunny:
-		" Wooh~ it's so hot, let's go drop by the closes convinient store and grab us something cool to drink.",
+		" Wooh~ it's blazing hot, let's go drop by the closest convinient store and grab us something cool to drink.",
 	cloudy:
 		"Hmmphh.. it's pretty cloudy today am i right joker? Did you know? Clouds can go up to 60,000 feet (18288 m) high in the sky. ",
 };
-
-//tells what class to add to the img
+let speak = '';
+//tells what class to add to the img also adds what morgana is going to say about the weather
 function showForecast(input, index) {
 	if (input == 3 || input == 0) {
 		weatherForecast[index].classList.add('sunny');
@@ -121,7 +122,25 @@ function showForecast(input, index) {
 		console.warn('forcast: somethign went wrong');
 		console.log(input);
 	}
-} //gets the forecast
+}
+
+function morganaSpeaks(input) {
+	if (input == 3 || input == 0) {
+		speak = morgana_speak.sunny;
+	} else if (input >= 1 && input <= 45 && input != 3) {
+		speak = morgana_speak.cloudy;
+	} else if (input >= 51 && input <= 65) {
+		speak = morgana_speak.rainy;
+	} else if (input >= 80 && input <= 86) {
+		speak = morgana_speak.rainy;
+	} else if (input >= 95 && input < 99) {
+		speak = morgana_speak.cloudy;
+	} else {
+		speak = 'le weather';
+	}
+}
+
+//gets the forecast
 function getCurrForecast(index) {
 	currentWeather().then((response) => {
 		showForecast(response.weathercode, index);
@@ -140,18 +159,6 @@ function getCurrentMonth() {
 		curMon.children[4].classList.remove('month__white');
 	}
 }
-// just in case
-// function getCurrentMonth() {
-// 	if (date.getMonth() + 1 > 10) {
-// 		curMon.children[0].textContent = date.getMonth() + 1;
-// 		curMon.children[1].textContent = date.getMonth() + 1;
-// 		curMon.children[2].textContent = date.getMonth() + 1;
-// 	} else {
-// 		curMon.children[0].textContent = `0${date.getMonth() + 1}`;
-// 		curMon.children[1].textContent = `0${date.getMonth() + 1}`;
-// 		curMon.children[2].textContent = `0${date.getMonth() + 1}`;
-// 	}
-// }
 
 // gets the days
 function getCurrentDayNum(index) {

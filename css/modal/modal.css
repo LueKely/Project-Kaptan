@@ -1,17 +1,22 @@
 /* modal container */
 .modal-btn {
-	display: none;
 	overflow: hidden;
 	margin: auto;
 	height: 120px;
 	width: 250px;
+
+	cursor: pointer;
+	transition: transform ease-in-out 200ms;
+	position: absolute;
+	left: 86%;
+	top: 83%;
 }
 .modal-btn__img {
 	transform: translate(-797px, -390px);
 }
 .modal-btn:hover {
 	transform: scale(1.2);
-	transition: transform 60ms ease-in;
+	transition: transform ease-in-out 200ms;
 }
 
 /* container */
@@ -26,7 +31,9 @@
 	background-size: cover;
 	overflow: hidden;
 }
-
+.modal--container::backdrop {
+	background-color: rgba(0, 0, 0, 0.345);
+}
 /* morgana in neutral*/
 .morgana {
 	width: 200px;
@@ -767,6 +774,18 @@
 	}
 }
 
+@keyframes mc-moves {
+	from {
+		opacity: 0%;
+		transform: translate(40px);
+	}
+	to {
+		transform: translate(0px);
+
+		opacity: 100%;
+	}
+}
+
 .dialogue__text {
 	position: absolute;
 	bottom: 0%;
@@ -796,6 +815,7 @@
 	position: absolute;
 	left: 60%;
 	bottom: 0%;
+	animation: mc-moves 200ms ease;
 }
 
 @keyframes choices-animate {
@@ -822,6 +842,7 @@
 	height: 500px;
 
 	position: relative;
+	animation: mc-moves 800ms ease;
 }
 
 .choices > .choices-holder {
@@ -985,4 +1006,13 @@
 		border-right: 6px solid transparent;
 		transform: skewX(-34deg) rotate(20deg) scaleY(0.9);
 	}
+}
+
+/* that a tag */
+a {
+	color: red;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
 }
