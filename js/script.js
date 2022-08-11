@@ -1,3 +1,4 @@
+// ignore this
 // const data = await (await fetch(url).catch(errorHandler)).json();
 
 // function errorHandler(err) {

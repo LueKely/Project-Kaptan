@@ -1,6 +1,49 @@
 const url =
 	'https://api.open-meteo.com/v1/forecast?latitude=14.52&longitude=121.05&hourly=temperature_2m,relativehumidity_2m,weathercode&daily=weathercode,temperature_2m_max,temperature_2m_min&current_weather=true&timezone=Asia%2FSingapore';
 
+const weekdayNum = document.querySelectorAll('.weekday__item');
+const curTemp = document.querySelectorAll('.temptoday__item');
+const curMon = document.querySelector('.month__item');
+const todayDate = document.querySelectorAll('.today__word');
+const weatherForecast = document.querySelectorAll('.character__sprite');
+const maxTemp = document.querySelectorAll('.mmtemp__max');
+const minTemp = document.querySelectorAll('.mmtemp__min');
+const loadingScreen = document.querySelector('.load--container');
+const morgana_speak = {
+	rainy:
+		"I hope you brought an umbrella joker, it's gonna be a wet one. A storm is a brewin'.",
+	sunny:
+		" Wooh~ it's blazing hot, let's go drop by the closest convinient store and grab us something cool to drink.",
+	cloudy:
+		"Hmmphh.. it's pretty cloudy today am i right joker? Did you know? Clouds can go up to 60,000 feet (18288 m) high in the sky. ",
+};
+let speak = '';
+// gets all the next 3 days
+const allDays = fetch('./json/weathertemp.json').then((response) => {
+	response.json().then((result) => {
+		for (let index = 1; index < 4; index++) {
+			if (date.getDay() + index == 1) {
+				todayDate[index].classList.add('monday');
+			} else {
+				todayDate[index].classList.remove('monday');
+			}
+			todayDate[index].innerHTML = result[output(index)];
+		}
+	});
+});
+// gets the html day from the json
+const lue = fetch('./json/weathertemp.json').then((response) => {
+	response.json().then((result) => {
+		if (date.getDay() == 1) {
+			todayDate[0].classList.add('monday');
+		} else {
+			todayDate[0].classList.remove('monday');
+		}
+		todayDate[0].innerHTML = result[date.getDay()];
+	});
+});
+let date = new Date();
+
 async function getForcast() {
 	const response = await fetch(url);
 	const data = await response.json();
@@ -65,27 +108,6 @@ currentWeather().then((results) => {
 		console.log(joe);
 	});
 });
-// listcurrentWeather();
-
-const weekdayNum = document.querySelectorAll('.weekday__item');
-const curTemp = document.querySelectorAll('.temptoday__item');
-const curMon = document.querySelector('.month__item');
-const todayDate = document.querySelectorAll('.today__word');
-const weatherForecast = document.querySelectorAll('.character__sprite');
-const maxTemp = document.querySelectorAll('.mmtemp__max');
-const minTemp = document.querySelectorAll('.mmtemp__min');
-// gets the html day from the json
-const lue = fetch('./json/weathertemp.json').then((response) => {
-	response.json().then((result) => {
-		if (date.getDay() == 1) {
-			todayDate[0].classList.add('monday');
-		} else {
-			todayDate[0].classList.remove('monday');
-		}
-		todayDate[0].innerHTML = result[date.getDay()];
-	});
-});
-let date = new Date();
 
 //gets the curr temp
 function getCurrTemp(index) {
@@ -95,15 +117,6 @@ function getCurrTemp(index) {
 	});
 }
 
-const morgana_speak = {
-	rainy:
-		"I hope you brought an umbrella joker, it's gonna be a wet one. A storm is a brewin'.",
-	sunny:
-		" Wooh~ it's blazing hot, let's go drop by the closest convinient store and grab us something cool to drink.",
-	cloudy:
-		"Hmmphh.. it's pretty cloudy today am i right joker? Did you know? Clouds can go up to 60,000 feet (18288 m) high in the sky. ",
-};
-let speak = '';
 //tells what class to add to the img also adds what morgana is going to say about the weather
 function showForecast(input, index) {
 	if (input == 3 || input == 0) {
@@ -187,25 +200,6 @@ function getCurrentDate() {
 	getCurrentMonth();
 	getCurrentDayNum(0);
 }
-
-// gets all the next 3 days
-const allDays = fetch('./json/weathertemp.json').then((response) => {
-	response.json().then((result) => {
-		for (let index = 1; index < 4; index++) {
-			if (date.getDay() + index == 1) {
-				todayDate[index].classList.add('monday');
-			} else {
-				todayDate[index].classList.remove('monday');
-			}
-			todayDate[index].innerHTML = result[output(index)];
-		}
-	});
-});
-getCurrTemp(0);
-getCurrentDate();
-getCurrForecast(0);
-getMinMaxTemp(0);
-// if it output gets pass 8 then it subtracts it
 function output(index) {
 	let input = date.getDay() + index;
 	let output;
@@ -213,12 +207,17 @@ function output(index) {
 
 	return output;
 }
+
+getCurrTemp(0);
+getCurrentDate();
+getCurrForecast(0);
+getMinMaxTemp(0);
+// if it output gets pass 8 then it subtracts it
+
 //gets the date of the next 3 days
 for (let index = 1; index < 4; index++) {
 	getCurrentDayNum(index);
 }
-
-const loadingScreen = document.querySelector('.load--container');
 
 // gets the forcast
 getForcast().then((response) => {
