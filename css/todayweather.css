@@ -45,7 +45,10 @@
 	bottom: 22%;
 	right: -6%;
 }
-
+.today__word > .week.thu {
+	bottom: 22%;
+	right: -12%;
+}
 .today__word > .week.sun {
 	bottom: 22%;
 	right: -10%;

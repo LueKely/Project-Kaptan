@@ -87,8 +87,8 @@
 	height: 130px;
 	background-color: black;
 	z-index: 2;
-	right: 1%;
-	bottom: -3%;
+	right: 1.5%;
+	bottom: -2%;
 }
 .month__blackslash-three {
 	position: absolute;
@@ -107,7 +107,7 @@
 	background-color: white;
 	z-index: 1;
 	right: 24%;
-	bottom: -10%;
+	bottom: -11%;
 }
 .month__blackslash-two-white {
 	position: absolute;
@@ -117,7 +117,7 @@
 	background-color: white;
 	z-index: 1;
 	right: -5%;
-	bottom: -13%;
+	bottom: -11%;
 }
 .month__blackslash-three-white {
 	position: absolute;
@@ -126,5 +126,5 @@
 	background-color: white;
 	z-index: 1;
 	right: -5%;
-	bottom: 40.5%;
+	bottom: 40%;
 }
