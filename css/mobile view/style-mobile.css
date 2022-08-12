@@ -10,6 +10,12 @@
 	}
 }
 
+@media screen and (max-width: 1300px) {
+	.modal-box {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 720px) {
 	body {
 		overflow-y: visible;
@@ -72,7 +78,7 @@
 	.todayweather--item > .todayweather > .today > .today__month {
 		transform: scale(0.6);
 		bottom: 60%;
-		right: 40%;
+		right: 37%;
 	}
 	.todayweather--item > .todayweather > .today > .today__num {
 		z-index: 3;

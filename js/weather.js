@@ -228,6 +228,12 @@ getForcast().then((response) => {
 	setTimeout(() => {
 		loadingScreen.classList.add('disappear');
 		document.querySelector('.following--days').style.display = 'flex';
+		document
+			.querySelector('.following--days')
+			.classList.add('animate__slideInUp');
+		document
+			.querySelector('.todayweather--container')
+			.classList.add('animate__slideInDown');
 		setTimeout(() => {
 			loadingScreen.classList.add('delete');
 		}, 1000);
