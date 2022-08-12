@@ -6,7 +6,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding-block: 10px;
 }
 .following--items {
 	overflow: hidden;

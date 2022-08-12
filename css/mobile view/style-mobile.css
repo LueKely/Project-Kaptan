@@ -1,6 +1,12 @@
-@media screen and (max-width: 1246px) {
-	.modal-btn {
-		display: none;
+@media screen and (max-width: 1400px) {
+	.xbtn {
+		position: absolute;
+		left: 89%;
+		bottom: 86%;
+	}
+	.mc--choices {
+		transform: rotate(10deg) scale(0.8);
+		bottom: 25%;
 	}
 }
 

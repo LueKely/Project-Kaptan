@@ -1,0 +1,68 @@
+.mc {
+	position: relative;
+
+	width: 550px;
+	height: 815px;
+}
+.mc__head {
+	position: absolute;
+	overflow: hidden;
+	width: 550px;
+	height: 815px;
+}
+.head-img {
+	transform: translateX(36px);
+}
+.mc__eyes {
+	overflow: hidden;
+	margin: 50px;
+	position: absolute;
+	z-index: 2;
+	width: 120px;
+	height: 100px;
+	/* bottom: 46%;
+	left: 55%; */
+	/* bottom: 46.2%;
+	left: 55%; */
+	bottom: 46.2%;
+	left: 55%;
+}
+.eyes-img {
+	transform: translate(-19px, -815px);
+	transform: translate(-151px, -815px);
+	transform: translate(-283px, -815px);
+
+	animation: mcBlink 2s infinite steps(1);
+}
+
+.modal--mc {
+	width: 550px;
+	height: 815px;
+	transform: scale(1);
+}
+@keyframes mcBlink {
+	0%,
+	75% {
+		transform: translate(-19px, -815px);
+	}
+	76%,
+	80% {
+		transform: translate(-151px, -815px);
+	}
+	81%,
+	85% {
+		transform: translate(-283px, -815px);
+	}
+	86%,
+	90% {
+		transform: translate(-19px, -815px);
+	}
+	91%,
+	95% {
+		transform: translate(-151px, -815px);
+	}
+	96%,
+	100% {
+		transform: translate(-283px, -815px);
+	}
+}

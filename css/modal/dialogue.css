@@ -1,0 +1,340 @@
+/* white text box */
+.dialogue__name-container {
+	position: relative;
+	margin: auto;
+
+	width: 300px;
+	height: 150px;
+}
+.dialogue__name-container > div {
+	position: absolute;
+}
+.name__box {
+	z-index: 2;
+	margin: auto;
+	width: 175px;
+	height: 50px;
+	background-color: white;
+	transform: perspective(180px) rotateX(15deg) rotateY(-20deg) rotateZ(360deg)
+		skewX(-15deg);
+
+	left: 22%;
+	bottom: 40%;
+
+	animation: boxMove 350ms ease-in-out 0s infinite alternate;
+}
+.name__box-shadow {
+	z-index: 1;
+	margin: auto;
+	width: 188px;
+	height: 65px;
+	background-color: black;
+	transform: perspective(180px) rotateX(15deg) rotateY(-20deg) rotateZ(360deg)
+		skewX(-15deg);
+	left: 20%;
+	bottom: 36%;
+	animation: boxMove-shadow 350ms ease-in-out 0s infinite alternate;
+}
+.name__triangle {
+	z-index: 2;
+	border-left: 12px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 90px solid white;
+	border-top: 10px solid transparent;
+	display: inline-block;
+
+	/* clip-path: polygon(50% 0%, -1% 100%, 100% 100%); */
+
+	transform: rotate(-90deg);
+	left: 15%;
+	bottom: 8%;
+	animation: triangle 300ms ease-in-out 0s infinite alternate;
+	outline: none;
+}
+
+.name__triangle-shadow {
+	z-index: 1;
+	border-left: 18px solid transparent;
+	border-right: 27px solid transparent;
+	border-bottom: 120px solid black;
+	border-top: 10px solid transparent;
+	display: inline-block;
+	/* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+	transform: rotate(-90deg);
+	left: 10%;
+	bottom: -2%;
+	animation: triangle-black 300ms ease-in-out 0s infinite alternate;
+}
+
+/* morgana text */
+.name__text {
+	transform: scaleY(1.2);
+	z-index: 4;
+	position: absolute;
+	left: 39%;
+	bottom: 45%;
+	font-family: 'p5hatty';
+	font-size: 2rem;
+}
+.r {
+	color: white;
+	background-color: black;
+}
+
+/* text */
+.dialogue__text-container {
+	position: relative;
+	margin: auto;
+	width: 1120px;
+	height: 300px;
+}
+.text__box {
+	position: absolute;
+	z-index: 3;
+	width: 900px;
+	height: 200px;
+	background-color: black;
+	clip-path: polygon(3% 10%, 95% 0%, 100% 91%, 0% 70%);
+	left: 14%;
+	bottom: 10%;
+	animation: tb1 300ms ease-in-out 0s infinite alternate;
+}
+.text__box-shadow {
+	position: absolute;
+
+	z-index: 2;
+	width: 920px;
+	height: 225px;
+	background-color: white;
+	clip-path: polygon(3% 10%, 95% 0%, 100% 91%, 0% 70%);
+	left: 13.5%;
+	bottom: 5%;
+	animation: tb1 300ms ease-in-out 0s infinite alternate;
+}
+.text__box-shadow-2nd {
+	position: absolute;
+
+	z-index: 1;
+	width: 935px;
+	height: 240px;
+	background-color: black;
+	clip-path: polygon(3% 10%, 95% 0%, 100% 91%, 0% 70%);
+	left: 13%;
+	bottom: 2%;
+	animation: tb1 500ms ease-in-out 0s infinite alternate;
+}
+
+@keyframes tb1 {
+	from {
+		clip-path: polygon(3% 10%, 95% 0%, 100% 91%, 0% 70%);
+	}
+
+	to {
+		clip-path: polygon(3.5% 10%, 94.5% 0%, 99.5% 91%, 1% 69%);
+	}
+}
+/* 12 */
+.text__triangle {
+	border-left: 16px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 100px solid black;
+	border-top: 0px solid transparent;
+	width: 20px;
+	transform: rotate(-60deg) skewY(30deg);
+	position: absolute;
+
+	z-index: 3;
+	left: 12%;
+	bottom: 19%;
+	animation: tt 200ms ease-in-out 0s infinite alternate;
+}
+
+.text__triangle-shadow {
+	border-left: 20px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 46px solid white;
+	width: 95px;
+	position: absolute;
+	left: 7.3%;
+	bottom: 27.5%;
+	z-index: 2;
+	transform: rotate(35deg);
+	animation: tts 150ms ease-in-out 0s infinite alternate;
+}
+.text__triangle-shadow-2 {
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 63px solid black;
+	width: 125px;
+	position: absolute;
+	left: 6.5%;
+	bottom: 24%;
+	z-index: 1;
+	transform: rotate(35deg);
+	animation: tts 150ms ease-in-out 0s infinite alternate;
+}
+@keyframes tts {
+	from {
+		transform: rotate(35deg) skew(0deg) scale(1);
+	}
+	to {
+		transform: rotate(38deg) skew(-5deg) scale(0.95);
+	}
+}
+/* 123 */
+.text__trapezoid {
+	border-left: 12px solid transparent;
+	border-right: 12px solid transparent;
+	border-bottom: 0px solid transparent;
+	border-top: 42px solid black;
+	width: 15px;
+	z-index: 3;
+	position: absolute;
+	/* left: 8.8%;
+	bottom: 33.1%; */
+	left: 8.8%;
+	bottom: 33.76%;
+	transform: rotate(30deg);
+	/* left: 8%;
+	bottom: 35%;
+	transform: rotate(16deg); */
+	animation: ttr 200ms ease-in-out 0s infinite alternate;
+}
+@keyframes ttr {
+	from {
+		border-left: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-top: 42px solid black;
+	}
+	to {
+		border-left: 12px solid transparent;
+		border-right: 12px solid transparent;
+		border-bottom: 0px solid transparent;
+		border-top: 46.2px solid black;
+	}
+}
+.text__small-triangle {
+	border-left: 6px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 50px solid black;
+	border-top: 0px solid transparent;
+	z-index: 3;
+	display: inline-block;
+	position: absolute;
+	bottom: 30%;
+	left: 7.9%;
+	transform: rotate(-61deg);
+	animation: tst 200ms ease-in-out 0s infinite alternate;
+}
+
+.text__small-triangle-white {
+	border-left: 16px solid transparent;
+	border-right: 16px solid transparent;
+	border-bottom: 90px solid white;
+	border-top: 0px solid transparent;
+	z-index: 2;
+	display: inline-block;
+	position: absolute;
+	bottom: 23%;
+	left: 7%;
+	transform: rotate(-58deg);
+	animation: tmt 200ms ease-in-out 0s infinite alternate;
+}
+.text__small-triangle-black {
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 120px solid black;
+	border-top: 0px solid transparent;
+	z-index: 1;
+	display: inline-block;
+	position: absolute;
+	bottom: 18%;
+	left: 6%;
+	transform: rotate(-58deg);
+	animation: tmt2 200ms ease-in-out 0s infinite alternate;
+}
+
+.text__text {
+	font-family: 'Optima Nova Black';
+	color: white;
+	width: 750px;
+	font-size: 1.5rem;
+	position: absolute;
+	left: 22%;
+	bottom: 39%;
+	z-index: 5;
+}
+@keyframes tmt {
+	from {
+		transform: rotate(-61deg) skewY(-15deg) scaleY(1);
+	}
+	to {
+		transform: rotate(-55deg) skewY(-10deg) scaleY(0.75);
+	}
+}
+@keyframes tmt2 {
+	from {
+		transform: rotate(-61deg) skewY(-15deg) scaleY(1);
+	}
+	to {
+		transform: rotate(-55deg) skewY(-10deg) scaleY(0.9);
+	}
+}
+
+@keyframes tst {
+	from {
+		transform: rotate(-61deg);
+	}
+	to {
+		transform: rotate(-55deg);
+	}
+}
+@keyframes tt {
+	from {
+		transform: rotate(-60deg) skewY(30deg) skewX(0deg);
+	}
+	to {
+		transform: rotate(-60deg) skewY(25deg) skewX(-5.5deg);
+	}
+}
+@keyframes boxMove {
+	0% {
+		transform: perspective(180px) rotateX(15deg) rotateY(-10deg) rotateZ(360deg)
+			skewX(-20deg) scale(0.9, 1);
+	}
+
+	100% {
+		transform: perspective(150px) rotateX(15deg) rotateY(-12deg) rotateZ(360deg)
+			skewX(-15deg) scale(1, 0.9);
+	}
+}
+@keyframes boxMove-shadow {
+	0% {
+		transform: perspective(180px) rotateX(15deg) rotateY(-10deg) rotateZ(360deg)
+			skewX(-25deg) scale(0.9, 1);
+	}
+
+	100% {
+		transform: perspective(180px) rotateX(15deg) rotateY(-11deg) rotateZ(360deg)
+			skewX(-20deg) scale(1, 0.9);
+	}
+}
+@keyframes triangle {
+	from {
+		transform: rotate(-90deg) skewY(20deg) scale(1, 1.1);
+	}
+	to {
+		-moz-transform: rotate(-85deg) skewY(-20deg) scale(1.1, 1);
+	}
+}
+@keyframes triangle-black {
+	from {
+		transform: rotate(-90deg) skewY(25deg) scale(1, 1.1);
+	}
+	to {
+		-moz-transform: rotate(-85deg) skewY(-25deg) scale(1.1, 1);
+	}
+}

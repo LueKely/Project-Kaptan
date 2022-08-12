@@ -1,0 +1,158 @@
+/* mc choices */
+
+.choices--container {
+	position: relative;
+	margin: auto;
+
+	width: 650px;
+	height: 130px;
+	cursor: pointer;
+}
+.click {
+	z-index: 10;
+	width: 600px;
+	height: 120px;
+}
+.choices--container > div {
+	position: absolute;
+}
+.choices__box {
+	z-index: 2;
+	margin: auto;
+	width: 400px;
+	height: 55px;
+	background-color: black;
+	transform: perspective(180px) rotateX(0deg) rotateY(10deg) rotateZ(360deg)
+		skewX(-15deg);
+	bottom: 40%;
+	left: 26%;
+	animation: choices-animate 200ms ease-in-out 0s infinite alternate;
+}
+.choices__triangle {
+	z-index: 2;
+	border-left: 20px solid transparent;
+	border-right: 27px solid transparent;
+	border-bottom: 120px solid black;
+	border-top: 0px solid transparent;
+	display: inline-block;
+
+	/* clip-path: polygon(50% 0%, -1% 100%, 100% 100%); */
+
+	transform: rotate(90deg);
+	bottom: -10%;
+	left: 80%;
+	animation: choices-animate-triangle 400ms ease-in-out 0s infinite alternate;
+}
+.choices__shadow-triangle {
+	z-index: 1;
+	border-left: 30px solid transparent;
+	border-right: 35px solid transparent;
+	border-bottom: 145px solid white;
+	border-top: 0px solid transparent;
+	display: inline-block;
+
+	/* clip-path: polygon(50% 0%, -1% 100%, 100% 100%); */
+
+	transform: rotate(90deg);
+	bottom: -19%;
+	left: 79%;
+	animation: choices-animate-triangle 400ms ease-in-out 0s infinite alternate;
+}
+
+.choices__shadow-box {
+	bottom: 35%;
+	left: 25%;
+	z-index: 1;
+	margin: auto;
+	width: 420px;
+	height: 70px;
+	background-color: white;
+	transform: perspective(180px) rotateX(0deg) rotateY(10deg) rotateZ(360deg)
+		skewX(-15deg);
+	animation: choices-animate 400ms ease-in-out 0s infinite alternate;
+}
+.choices__text {
+	font-family: 'Optima Nova Black';
+	width: 300px;
+	color: white;
+	font-size: 1.5rem;
+	z-index: 3;
+	left: 35%;
+	bottom: 50%;
+}
+
+.choices {
+	width: 700px;
+	height: 500px;
+
+	position: relative;
+	animation: mc-moves 800ms ease;
+}
+
+.choices > .choices-holder {
+	position: absolute;
+}
+.choices > .choices-holder:nth-child(1) {
+	bottom: 65%;
+	transform: rotate(15deg);
+	transition: transform 100ms ease-in-out;
+}
+.choices > .choices-holder:nth-child(2) {
+	bottom: 35%;
+	transform: rotate(0deg);
+	transition: transform 100ms ease-in-out;
+}
+
+.choices > .choices-holder:nth-child(3) {
+	bottom: 5%;
+	transform: rotate(-15deg);
+	transition: transform 100ms ease-in-out;
+}
+.choices > .choices-holder:nth-child(1):hover {
+	bottom: 65%;
+	transform: rotate(15deg) scale(1.2);
+	transition: transform 100ms ease-in-out;
+}
+.choices > .choices-holder:nth-child(2):hover {
+	bottom: 35%;
+	transform: rotate(0deg) scale(1.2);
+	transition: transform 100ms ease-in-out;
+}
+.choices > .choices-holder:nth-child(3):hover {
+	bottom: 4%;
+	transform: rotate(-15deg) scale(1.2);
+	transition: transform 100ms ease-in-out;
+}
+.choices--container.focused > .choices__shadow-box {
+	background-color: black;
+}
+.choices--container.focused > .choices__text {
+	color: black;
+}
+.choices--container.focused > .choices__box {
+	background-color: white;
+}
+.choices--container.focused > .choices__shadow-triangle {
+	border-bottom: 145px solid black;
+}
+.choices--container.focused > .choices__triangle {
+	border-bottom: 120px solid white;
+}
+@keyframes choices-animate {
+	from {
+		transform: perspective(180px) rotateX(0deg) rotateY(10deg) rotateZ(360deg)
+			skewX(-15deg) scale(1, 0.98);
+	}
+	to {
+		transform: perspective(180px) rotateX(0deg) rotateY(10deg) rotateZ(360deg)
+			skewX(-13deg) scale(0.98, 1);
+	}
+}
+@keyframes choices-animate-triangle {
+	from {
+		transform: rotate(90deg) scale(1, 0.9) skewY(10deg);
+	}
+	to {
+		transform: rotate(93deg) scale(0.9, 1) skewY(0deg);
+	}
+}

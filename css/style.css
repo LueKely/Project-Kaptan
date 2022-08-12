@@ -76,3 +76,17 @@ body.night {
 	margin: 0;
 	padding: 0;
 }
+
+.dont-sue-me {
+	width: 100vw;
+	background-color: black;
+	color: #fffffe;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'p5hatty';
+}
+.dont-sue-me > p {
+	margin-inline: 10px;
+	text-align: center;
+}

@@ -67,7 +67,7 @@
 	transform: rotate(10deg);
 	color: white;
 	z-index: 3;
-	right: 13%;
+	right: 9%;
 	bottom: 12%;
 }
 .month__item > .month__blackslash {

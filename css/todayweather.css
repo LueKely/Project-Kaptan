@@ -19,7 +19,7 @@
 .today__month {
 	transform: scale(0.7);
 	bottom: 45%;
-	right: 50%;
+	right: 46%;
 }
 .today__num {
 	z-index: 3;
@@ -43,7 +43,7 @@
 }
 .today__word > .week.fri {
 	bottom: 22%;
-	right: -6%;
+	right: -12%;
 }
 .today__word > .week.thu {
 	bottom: 22%;
