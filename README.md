@@ -1,5 +1,5 @@
 # Project-Kaptan
-A simple weather app using javascript, html and css with a persona 5 theme within it. I'm still a novice in JS, html and css and this is my second time handling fetch api's in java script.
+A simple weather app using javascript, html and css with a persona 5 theme within it. I'm still a novice in JS, html and css and this is my second time handling fetch api's in java script. This is if not one of the longest projects I ever made and I hope you guys enjoy it as well as I did. 
 
 # Instructions
  Click this [link](https://luekely.github.io/Project-Kaptan/index.html) to visit the project
@@ -39,8 +39,14 @@ In making of project kaptan, I stumbled upon another weather app just like what 
 
 I will be honest that I did took some inspiration of the design to his ***BUT*** please here me out. All the code,css and js is **COMPLETELY DIFFERENT** and will further elabortate in another MD text but you can always compare mine to his and it will be like camparing night and day because of all my noob mistakes and what not.
  
-    
- 
+# My Short Comings 
+* There are alot of stuff that I did not achieved due to my lack of knowledge and through the strictness of having to rely on vanilla js or in short, my incomptence.
+And speaking of incomptence, my collegues where right on most of my design choices, that I should have used image altering/editting software like photoshop or illustrator but I never did listened for I never knew how to use them in the first place and yet I should have listened. As the words of my collegue *"told you"* and indeed you did, 30% of the production of this website could've been shorter if I have used an image editing software, so I apologize for not listening alright?
+
+* One of my other short comings was the over reliance of css in creating assets for the sites 
+  For Example:
+###On a Chromium Browser:
+###On a Mozilla Fox Browser
  
  
 
