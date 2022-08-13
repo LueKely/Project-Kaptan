@@ -8,7 +8,11 @@ A simple weather app using javascript, html and css
  Fork this repo and open in vscode and run the live view extention of your choice.
  
  # Preview
- 
+
+### Night time
+ ![alt text](https://github.com/LueKely/Project-Kaptan/blob/Final/screenshots/Evening.png)
+### Modal
+ ![alt text](https://github.com/LueKely/Project-Kaptan/blob/Final/screenshots/Modal.png)
 
 # Special Thanks
 * My Friends for helping me suggest any features in this project of mine
