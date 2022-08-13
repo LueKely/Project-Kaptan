@@ -62,7 +62,7 @@
    ### On a Mozilla Fox Browser
    ![Mozilla preview](https://github.com/LueKely/Project-Kaptan/blob/Final/screenshots/mozilla.png)
  
- As seen in the images above those corners of the letters that are rounded was made by how both of the browsers rendered the css property, `-webkit-text-stroke-color`. In the case of Mozilla fox, it rendered it with rounded corners which is oh well it is what it is.
+ As seen in the images above those corners of the letters that are rounded was made by how both of the browsers rendered the css property, `-webkit-text-stroke-`. In the case of Mozilla fox, it rendered it with rounded corners which is oh well it is what it is.
  
  * Another minor short coming is that it gets weird when you use a different screen resolution, oh well.
 
