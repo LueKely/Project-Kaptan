@@ -37,7 +37,7 @@
 # Whoops
  In making of project kaptan, I stumbled upon another weather app just like what i was about to built but more professional unlike mine and it was none other than [Caffe-Nate](https://github.com/caffi-nate/Persona5-Weather-Forecast)'s. 
 
- I will be honest that I did took some inspiration of the design to his ***BUT*** please here me out. All the code,css and js is **COMPLETELY DIFFERENT** and will further elabortate in another MD text but you can always compare mine to his and it will be like camparing night and day because of all my noob mistakes and what not.
+ I will be honest that I did took some inspiration of the design to his ***BUT*** please here me out. All the code,css and js is **COMPLETELY DIFFERENT** and will further elaborate in another MD text but you can always compare mine to his and it will be like camparing night and day because of all my noob mistakes and what not.
  
 # My Short Comings 
 *  There are alot of stuff that I did not achieved due to my lack of knowledge and through the strictness of having to rely on vanilla js or in short, my incomptence. And speaking of incomptence, my colleagues where right on most of my design choices, that I should have used image altering/editting software like photoshop or illustrator but I never did listened for I never knew how to use them in the first place and yet I should have listened. As the words of my colleague *"told you"* and indeed you did, 30% of the production of this website could've been shorter if I have used an image editing software, so I apologize for not listening alright?
@@ -58,5 +58,7 @@
  # Closing Remarks
  
  I still can't believe I made this piece of shit. I will now enjoy the last weeks of my summer vacation (because I used it all on making this although, it is all worth it in the end) and maybe pick a framework to build upon. For now I will continue playing Darkest Dungeon.
+
+ Feel free to use some of the assets that I have created though I am too lazy to explain how some of them works so good luck understanding my stupidity, my friend.
  
 
