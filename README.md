@@ -30,6 +30,17 @@
 # About the Project
  *Project-Kaptan* a weather app that uses the free [Open-Meteo api](https://open-meteo.com/en) that has theme of the all time popular JRPG Game, Persona 5 by Atlus&#8482;. Kaptan comes from the Filipino Mythology, Kaptan is the sepreme god that dwells on the sky and is also a counter part of Bathala. You can see why I named this project in that way considering both have something to do with the weather. 
  
+* Production
+ Some of the assets use like joker and morgana was taken from a sprite sheet in which I manipulated to do the animations
+  Examples:
+  ### Morgana
+  ![sprite sheet](https://github.com/LueKely/Project-Kaptan/blob/Final/Images/sprites/morgana.png)
+
+  ### Joker
+   ![sprite sheet](https://github.com/LueKely/Project-Kaptan/blob/Final/Images/sprites/MC.png)
+   
+
+
 # How Project Kaptan Happened
  I started making project kaptan in july to futher test my knowledge of fetching an api in js and as well to sharpen my skills in css, so on the thoughts of the "how to" design my weather app i thought why not theme it to the games I hold dearly which was Persona and the rest is history. 
  
