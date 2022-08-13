@@ -32,7 +32,8 @@
  
 * Production
  Some of the assets use like joker and morgana was taken from a sprite sheet in which I manipulated to do the animations
-  Examples:
+ 
+ Examples:
   ### Morgana
   ![sprite sheet](https://github.com/LueKely/Project-Kaptan/blob/Final/Images/sprites/morgana.png)
 
