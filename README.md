@@ -53,7 +53,8 @@
  
  As seen in the images above those corners of the letters that are rounded was made by how both of the browsers rendered the css property, `-webkit-text-stroke-color`. In the case of Mozilla fox, it rendered it with rounded corners which is oh well it is what it is.
  
- 
+ * Another minor short coming is that it gets weird when you use a different screen resolution, oh well.
+
  # Closing Remarks
  
  I still can't believe I made this piece of shit. I will now enjoy the last weeks of my summer vacation (because I used it all on making this although, it is all worth it in the end) and maybe pick a framework to build upon. For now I will continue playing Darkest Dungeon.
