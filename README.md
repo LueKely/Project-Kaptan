@@ -51,7 +51,7 @@
  I will be honest that I did took some inspiration of the design to his ***BUT*** please here me out. All the code,css and js is **COMPLETELY DIFFERENT** and will further elaborate in another MD text but you can always compare mine to his and it will be like camparing night and day because of all my noob mistakes and what not.
  
 # My Short Comings 
-*  There are alot of stuff that I did not achieved due to my lack of knowledge and through the strictness of having to rely on vanilla js or in short, my incomptence. And speaking of incomptence, my colleagues where right on most of my design choices, that I should have used image altering/editting software like photoshop or illustrator but I never did listened for I never knew how to use them in the first place and yet I should have listened. As the words of my colleague *"told you"* and indeed you did, 30% of the production of this website could've been shorter if I have used an image editing software, so I apologize for not listening alright?
+*  There are alot of stuff that I did not achieved due to my lack of knowledge and through the strictness of having to rely on vanilla js or in short, my incompetence. And speaking of incompetence, my colleagues where right on most of my design choices, that I should have used image altering/editting software like photoshop or illustrator but I never did listened for I never knew how to use them in the first place and yet I should have listened. As the words of my colleague *"told you"* and indeed you did, 30% of the production of this website could've been shorter if I have used an image editing software, so I apologize for not listening alright?
 
 * One of my other short comings was the over reliance of css in creating assets for the sites 
   For Example
