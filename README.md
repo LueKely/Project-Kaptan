@@ -26,6 +26,7 @@
 * My Friends for helping me suggest any features in this project of mine
 * [Caffe-Nate](https://github.com/caffi-nate/Persona5-Weather-Forecast) for his repo it helped quite a lot on though I have few words about that [here](#whoops).
 * [animate.style](https://animate.style/) an animation library that I used for the transitions
+* [Spriters-resource](https://www.spriters-resource.com/) for the sprite sheets of joker and morgana 
 
 # About the Project
  *Project-Kaptan* a weather app that uses the free [Open-Meteo api](https://open-meteo.com/en) that has theme of the all time popular JRPG Game, Persona 5 by Atlus&#8482;. Kaptan comes from the Filipino Mythology, Kaptan is the sepreme god that dwells on the sky and is also a counter part of Bathala. You can see why I named this project in that way considering both have something to do with the weather. 
